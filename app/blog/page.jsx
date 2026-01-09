@@ -1,0 +1,1 @@
+import TraditionJournal from "@/components/TraditionJournal";

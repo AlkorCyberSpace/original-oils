@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Tailwind v4 theme tokens */
+@theme {
+  --color-primary: #d4b10f;
+  --color-darkBrown: #5a3b00;
+  --color-greenKerala: #2fa84f;
+
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+}
+
+
+/* Global body styles */
+body {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+} */
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}

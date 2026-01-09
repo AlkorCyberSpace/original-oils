@@ -1,0 +1,31 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Statistics from "@/components/Statistics";
+import AboutSection from "@/components/AboutSection";
+import OilsSection from "@/components/OilsSection";
+import CraftSection from "@/components/CraftSection";
+import { Hand } from "lucide-react";
+import HandpickedSection from "@/components/HandpickedSection";
+import GallerySection from "@/components/GallerySection";
+import TraditionJournal from "@/components/TraditionJournal";
+import Testimonials from "@/components/Testimonials";
+import ConnectSection from "@/components/ConnectSection";
+export default function HomePage() {
+  return (
+    <>
+      
+      <Hero />
+      <Statistics />
+      <AboutSection />
+      <OilsSection />
+      <HandpickedSection /> 
+      <CraftSection />
+      <GallerySection />
+      
+      <TraditionJournal />
+      <Testimonials />
+      <ConnectSection />
+    
+    </>
+  );
+}
