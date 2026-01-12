@@ -10,7 +10,7 @@ const Hero = () => {
         relative overflow-hidden pt-28
         -mt-12
       "
-    > 
+    >
       {/* Left Section */}
       <div className="-translate z-20 -translate-y-5">
         <h1 className="font-serif font-bold text-[4.8rem] leading-none whitespace-nowrap text-shadow-[0_4px_12px_rgba(0,0,0,0.35)]">
