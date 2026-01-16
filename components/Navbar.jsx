@@ -65,7 +65,7 @@ const Navbar = () => {
 
           {/* LOGO (LEFT ALWAYS) */}
           <Link href="/" onClick={() => setOpen(false)}>
-            {( !isHome || scrolled || !isDesktop) && (
+            {(!isHome || scrolled || !isDesktop) && (
               <Image
                 src="/logo.png"
                 alt="Original Oils Logo"
@@ -78,40 +78,40 @@ const Navbar = () => {
           </Link>
 
           {/* DESKTOP NAV (RIGHT) */}
-         {showFullNavbar && (
-  <>
-    {/* CENTER LINKS */}
-    <ul
-      className={`
+          {showFullNavbar && (
+            <>
+              {/* CENTER LINKS */}
+              <ul
+                className={`
         hidden md:flex
         absolute left-1/2 -translate-x-1/2
         gap-8 text-sm font-medium
         ${textColor}
       `}
-    >
-      {navItems.map((item) => (
-        <li key={item} className="relative group">
-          <Link href={linkMap[item]}>
-            <span className="transition-colors group-hover:text-[#843d0b]">
-              {item}
-            </span>
-            <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#6b3e26] transition-all group-hover:w-full" />
-          </Link>
-        </li>
-      ))}
-    </ul>
+              >
+                {navItems.map((item) => (
+                  <li key={item} className="relative group">
+                    <Link href={linkMap[item]}>
+                      <span className="transition-colors group-hover:text-[#843d0b]">
+                        {item}
+                      </span>
+                      <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#6b3e26] transition-all group-hover:w-full" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
 
-    {/* RIGHT BUTTON */}
-    <div className="hidden md:flex">
-      <Link
-        href="/contact"
-        className="bg-darkBrown text-white px-6 py-2 rounded-full text-sm font-semibold transition hover:scale-105 hover:shadow-lg"
-      >
-        CONTACT US ➚
-      </Link>
-    </div>
-  </>
-)}
+              {/* RIGHT BUTTON */}
+              <div className="hidden md:flex">
+                <Link
+                  href="/contact"
+                  className="bg-darkBrown text-white px-6 py-2 rounded-full text-sm font-semibold transition hover:scale-105 hover:shadow-lg"
+                >
+                  CONTACT US ➚
+                </Link>
+              </div>
+            </>
+          )}
 
 
           {/* HAMBURGER (MOBILE ONLY) */}
@@ -159,8 +159,8 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* SPACER FOR NON-HOME */}
-      {!isHome && <div className="h-20" />}
+      {/* SPACER FOR NON-HOME - REMOVED TO ELIMINATE GAPS */}
+      {/* {!isHome && <div className="h-20" />} */}
     </>
   );
 };

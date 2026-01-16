@@ -42,7 +42,6 @@ const blogData = [
 ];
 
 export default async function BlogDetailPage({ params }) {
-  // ✅ THIS IS THE KEY LINE
   const { slug } = await params;
 
   const blog = blogData.find((b) => b.slug === slug);
@@ -52,19 +51,20 @@ export default async function BlogDetailPage({ params }) {
   }
 
   return (
-    <section className="bg-white py-16 px-4">
-      <div className="max-w-5xl mx-auto">
+    <section className="bg-white py-16 ">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 md:px-8 sm:max-w-4xl md:max-w-7xl">
 
-        {/* Image + Title */}
-        <div className="relative h-[420px] rounded-2xl overflow-hidden bg-black">
+        <div className="relative max-w-5xl h-107.5 rounded-2xl overflow-hidden bg-black mx-auto">
+
           <Image
             src={blog.image}
             alt={blog.title}
             fill
-    className="object-contain scale-[1.70]"
+            className="object-contain  object-center scale-[1.70]"
           />
+
           <div className="absolute inset-0 bg-black/40" />
-          <h1 className="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-4xl font-serif text-center px-6">
+          <h1 className="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-4xl font-playfair text-center px-6">
             {blog.title}
           </h1>
         </div>
