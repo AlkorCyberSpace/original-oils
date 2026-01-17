@@ -1,10 +1,10 @@
 import TraditionJournal from "@/components/TraditionJournal";
-// import ConnectSection from "@/components/ConnectSection";
+import ConnectSection from "@/components/ConnectSection";
 export default function BlogPage() {
   return (
-    <main >
+    <>
       <TraditionJournal />
-      {/* <ConnectSection /> */}
-    </main>
+      <div className="mt-28"><ConnectSection /></div>
+    </>
   );
 }

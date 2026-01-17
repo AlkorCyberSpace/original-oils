@@ -5,6 +5,8 @@ import Link from "next/link";
 import { products } from "@/data/products";
 import { CircleCheckBig } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 
 export default function ProductDetail({ product }) {
     const relatedProducts = products
@@ -17,17 +19,32 @@ export default function ProductDetail({ product }) {
 
     const [expanded, setExpanded] = useState(false);
     const [currentImage, setCurrentImage] = useState(product.image);
+    const router = useRouter();
 
-    // Reset currentImage when product changes
+
     useEffect(() => {
         setCurrentImage(product.image);
     }, [product.image]);
 
-    // Ensure main image is in the gallery
+
     const gallery = product.gallery ? [...new Set([product.image, ...product.gallery])] : [product.image];
 
     return (
         <section className="bg-white  px-3 md:px-10 pb-10 min-h-screen">
+            <button
+                onClick={() => router.back()}
+                aria-label="Go back"
+                title="Back"
+                className="inline-flex items-center justify-center 
+               bg-[#ffffff] text-black hover:bg-black 
+               hover:text-white rounded-full p-3 
+               transition-colors"
+            >
+                <ArrowLeft size={20} />
+            </button>
+
+
+
             <div className="flex flex-col lg:flex-row justify-between items-start  relative pb-3">
 
                 <div className="relative z-10 w-full">
@@ -47,7 +64,7 @@ export default function ProductDetail({ product }) {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                 <div className="space-y-6">
-                    <div className="relative w-full aspect-7/5 sm:aspect-[6/5] md:aspect-[8/6] overflow-hidden bg-[#f3f3f3] rounded-3xl flex items-center justify-center">
+                    <div className="relative w-full aspect-7/5 sm:aspect-6/5 md:aspect-8/6 overflow-hidden bg-[#f3f3f3] rounded-3xl flex items-center justify-center">
                         <Image
                             src={currentImage}
                             alt={product.title}

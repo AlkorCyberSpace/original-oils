@@ -22,72 +22,119 @@ const articles = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: [0.21, 0.47, 0.32, 0.98],
+    },
+  },
+};
+
 export default function TraditionJournal() {
   return (
-    <section className="bg-white px-6 md:px-8 py-7">
-      {/* Header */}
-      <div className="grid md:grid-cols-2 gap-12 mb-16 items-center">
-        {/* Left */}
+    <section className="bg-white px-6 md:px-8 py-7 overflow-hidden">
+      <motion.div
+        className="grid md:grid-cols-2 gap-2 mb-10 items-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
         <div>
-          <p className="text-md tracking-wide text-gray-500 mb-2">
+          <p className="text-md tracking-wide text-gray-500 ">
             The Tradition Journal
           </p>
 
-          <h2 className="font-serif text-[2rem] md:text-[2.6rem] leading-tight text-gray-900 md:whitespace-nowrap">
+          <h2 className="font-playfair text-[2rem] font-semibold md:text-[2rem] lg:[2.6rem] leading-tight text-[#333333] md:whitespace-nowrap">
             Stories Rooted in Tradition
           </h2>
         </div>
 
-        {/* Right */}
-        <div className="flex flex-col justify-end items-end text-gray-600 text-lg text-right leading-relaxed font-medium">
-          <p>Where tradition, balance,</p>
+        <div className="flex flex-col justify-end items-end text-gray-600 text-xs sm:text-xs md:text-md lg:text-md text-right leading-relaxed font-medium">
+          <p>
+            Where tradition, balance, 
+          </p>
           <p>and everyday wellness come together.</p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
         {articles.map((item, index) => (
           <Link
             key={index}
             href={`/blog/${item.slug}`}
-            className="block"
+            className="block group"
           >
             <motion.div
-              className="bg-white rounded-2xl shadow-[0_2px_10px_rgba(0,0,0,0.08)] overflow-hidden cursor-pointer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0,0,0,0.12)" }}
+              variants={cardVariants}
+              className="bg-white rounded-2xl shadow-[0_2px_10px_rgba(0,0,0,0.08)] overflow-hidden cursor-pointer h-full flex flex-col"
+              whileHover={{
+                y: -10,
+                boxShadow: "0 20px 30px rgba(0,0,0,0.12)",
+                transition: { duration: 0.4, ease: "easeOut" }
+              }}
             >
-              {/* Image */}
-              <div className="relative h-55 w-full">
-                <Image
-                  src={item.image}
-                  alt="Journal Image"
-                  fill
-                  className="object-cover transition-transform duration-500 ease-in-out"
-                />
+              <div className="relative h-56 w-full overflow-hidden">
+                <motion.div
+                  className="w-full h-full"
+                  initial={{ grayscale: "100%", brightness: 0.9 }}
+                  whileHover={{
+                    scale: 1.1,
+                    grayscale: "0%",
+                    brightness: 1.1,
+                    transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1] }
+                  }}
+                  animate={{ grayscale: "100%", brightness: 0.9 }}
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                </motion.div>
               </div>
 
-              {/* Content */}
-              <div className="p-4 flex flex-col justify-between min-h-[36]">
-                <p className="text-gray-800 text-sm leading-relaxed">
+              <div className="p-5 flex flex-col justify-between flex-grow">
+                <p className="text-gray-900 text-[1.05rem] leading-snug font-medium mb-4">
                   {item.title}
                 </p>
 
-                <div className="mt-3 text-sm text-gray-600 flex items-center gap-2">
-                  Read More
-                  <span className="w-5 h-5 rounded-full border border-gray-400 flex items-center justify-center text-xs">
+                <div className="mt-auto text-sm text-gray-600 flex items-center gap-2 font-semibold">
+                  <span>Read More</span>
+                  <motion.span
+                    className="w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center text-xs transition-colors group-hover:bg-gray-900 group-hover:text-white group-hover:border-gray-900"
+                    whileHover={{ x: 5 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  >
                     →
-                  </span>
+                  </motion.span>
                 </div>
               </div>
             </motion.div>
           </Link>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
