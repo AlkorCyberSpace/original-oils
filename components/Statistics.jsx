@@ -48,7 +48,7 @@ const Statistics = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-serif text-5xl font-medium text-gray-800 leading-tight"
+          className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-gray-800 leading-tight"
         >
           Business Build on <br />
           Honesty and Trust
@@ -59,7 +59,7 @@ const Statistics = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-6 text-gray-500 max-w-2xl mx-auto"
+className="mt-4 text-sm sm:text-base text-gray-500 max-w-2xl mx-auto"
         >
           See how our expertise and dedication <br />
           have transformed thousands of lives
@@ -71,7 +71,7 @@ const Statistics = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {[
             {
