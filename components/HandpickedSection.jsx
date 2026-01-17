@@ -49,7 +49,7 @@ const HandpickedSection = () => {
       </motion.div>
 
       {/* Products */}
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {products.map((product, index) => (
           <motion.div
             key={index}

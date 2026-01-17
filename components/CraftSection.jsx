@@ -120,7 +120,7 @@ export default function CraftSection() {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="flex flex-col items-start gap-10">
+<div className="flex flex-col items-center sm:items-start gap-10">
          <div className="flex justify-center ml-4">
   <Image
     src="/originals.png"
