@@ -2,14 +2,14 @@
 
 const AboutStory = () => {
   return (
-    <section className="bg-white px-6 md:px-16 py-10">
+    <section className="bg-white px-6 md:px-16 py-6">
       <div className="max-w-4xl mx-auto">
 
         <p className="text-xs tracking-widest text-gray-400 mb-4">
           // Welcome To Artisan’s Originals
         </p>
 
-        <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-8">
+        <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-5">
           About Us
         </h2>
 

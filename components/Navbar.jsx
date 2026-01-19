@@ -70,14 +70,12 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-500">
         <div className="flex items-center justify-between px-6 py-3">
 
-          {/* ✅ LOGO — ALWAYS visible on MOBILE */}
+          {/* ✅ LOGO */}
           <Link href="/" onClick={() => setOpen(false)}>
-
             {(!isDesktop ||
               (isHome
                 ? (!showFullNavbar && isDesktop)
-                : scrolled && isDesktop)) && (
-
+                : isDesktop)) && (
               <Image
                 src="/logo.png"
                 alt="Original Oils Logo"
@@ -89,8 +87,6 @@ const Navbar = () => {
             )}
           </Link>
 
-
-
           {/* ================= DESKTOP NAV ================= */}
           {(showFullNavbar || (!isHome && isDesktop && !scrolled)) && (
             <>
@@ -101,18 +97,31 @@ const Navbar = () => {
                   gap-8 text-sm font-medium
                   ${textColor}
                 `}
-
               >
-                {navItems.map((item) => (
-                  <li key={item} className="relative group">
-                    <Link href={linkMap[item]}>
-                      <span className="transition-colors group-hover:text-[#843d0b]">
-                        {item}
-                      </span>
-                      <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#6b3e26] transition-all group-hover:w-full" />
-                    </Link>
-                  </li>
-                ))}
+                {navItems.map((item) => {
+                  const href = linkMap[item];
+                  const isActive = pathname === href;
+
+                  return (
+                    <li key={item} className="relative group">
+                      <Link href={href}>
+                        <span
+                          className={`transition-colors
+                            ${isActive ? "text-[#6b3e26] font-semibold" : ""}
+                            group-hover:text-[#843d0b]
+                          `}
+                        >
+                          {item}
+                        </span>
+                        <span
+                          className={`absolute left-0 -bottom-1 h-0.5 bg-[#6b3e26] transition-all
+                            ${isActive ? "w-full" : "w-0 group-hover:w-full"}
+                          `}
+                        />
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
 
               <div className="hidden md:flex">
@@ -126,7 +135,7 @@ const Navbar = () => {
             </>
           )}
 
-          {/* ✅ HAMBURGER — ALWAYS visible on MOBILE */}
+          {/* ✅ HAMBURGER */}
           {(!isDesktop ||
             (!isHome ? scrolled && isDesktop : !showFullNavbar)) && (
             <button
@@ -149,18 +158,26 @@ const Navbar = () => {
           ${open ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
         `}
       >
-        <ul className="flex flex-col gap-6 px-8 py-8 text-sm font-medium text-gray-900">
-          {navItems.map((item) => (
-            <li key={item}>
-              <Link
-                href={linkMap[item]}
-                onClick={() => setOpen(false)}
-                className="block hover:text-[#6b3e26]"
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
+        <ul className="flex flex-col gap-6 px-8 py-8 text-sm font-medium">
+          {navItems.map((item) => {
+            const href = linkMap[item];
+            const isActive = pathname === href;
+
+            return (
+              <li key={item}>
+                <Link
+                  href={href}
+                  onClick={() => setOpen(false)}
+                  className={`block transition-colors
+                    ${isActive ? "text-[#6b3e26] font-semibold" : "text-gray-900"}
+                    hover:text-[#6b3e26]
+                  `}
+                >
+                  {item}
+                </Link>
+              </li>
+            );
+          })}
 
           <Link
             href="/contact"
