@@ -9,7 +9,7 @@ const images = [
 
 export default function GallerySection() {
   return (
-    <section className="bg-white px-6 md:px-20 py-20">
+    <section className="bg-white px-6 md:px-20 py-10">
       {/* Header */}
       <div className="grid md:grid-cols-2 gap-10 mb-14 items-start">
         <div>

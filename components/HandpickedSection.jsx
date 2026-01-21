@@ -49,7 +49,7 @@ const HandpickedSection = () => {
       </motion.div>
 
       {/* Products */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="-mt-7 grid grid-cols-3 md:grid-cols-3 gap-2 max-w-5xl mx-auto">
         {products.map((product, index) => (
           <motion.div
             key={index}
@@ -65,7 +65,7 @@ const HandpickedSection = () => {
             }}
             whileHover={{ y: -6 }}
           >
-            <div className="relative w-full h-65 flex items-center justify-center">
+            <div className="relative w-full h-65 flex items-center justify-center md:mt-6">
               <Image
                 src={product.image}
                 alt={product.title}
@@ -75,7 +75,7 @@ const HandpickedSection = () => {
               />
             </div>
 
-            <p className="mt-3 text-gray-700 text-sm tracking-wide">
+<p className="-mt-7 md:mt-2 text-gray-700 text-sm tracking-wide">
               {product.title}
             </p>
           </motion.div>
