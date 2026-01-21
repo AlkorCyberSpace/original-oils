@@ -8,29 +8,30 @@ const items = [
     title: "From Kerala’s First Mills to You",
     description:
       "Care guides every step we take. Every bottle is carefully crafted using time-honored methods and delivered to your home with purity, intention, and trust.",
-    image: "/about/oil-6.png",
+    image: "/about/oil-7.png",
   },
   {
     title: "Rooted in Tradition. Crafted with Care.",
     description:
       "Inspired by heritage and guided by intention, every bottle is carefully made using traditional practices to bring you pure, honest oils you can trust.",
-    image: "/about/oil-2.png",
+    image: "/about/oil-12.png",
   },
   {
     title: "Oils That Tell a Story",
     description:
       "Each bottle carries the essence of tradition, crafted with care using age-old methods to preserve purity, purpose, and nature’s true goodness.",
-    image: "/about/oil-5.png",
+    image: "/about/oil-9.png",
   },
   {
     title: "Original Oils. Original Care",
     description:
       "Guided by tradition and crafted with heart, every bottle reflects our commitment to honest ingredients and mindful care.",
-    image: "/about/oil-4.png",
+    image: "/about/oil-10.png",
   },
 ];
 
 export default function AboutProductShowcase() {
+  // oil-7 active by default
   const [active, setActive] = useState(0);
 
   return (
@@ -64,29 +65,33 @@ export default function AboutProductShowcase() {
               {/* IMAGE FRAME */}
               <div
                 className={`
-    w-44
-    ${item.image === "/about/oil-6.png"
-                    ? "h-110 md:h-140 -translate-y-12 md:-translate-y-38"
-                    : "h-72 md:h-95"}
-    md:w-37.5
-    flex items-center justify-center
-    transition-all duration-300 ease-out
-    ${active === index ? "scale-[1.05]" : "opacity-90"}
-  `}
+                  w-44 h-72 md:w-37.5 md:h-65
+                  flex items-center justify-center
+                  transition-opacity duration-300
+                  ${active === index ? "opacity-100" : "opacity-85"}
+                `}
               >
+                {/* CLIP AREA */}
+                <div className="relative w-full h-full overflow-hidden flex items-center justify-center">
+                  
+                  {/* SLIM → FULL (ACTIVE ONLY) */}
+                  <div
+                    className={`
+                      h-full transition-all duration-700 ease-out
+                      ${active === index ? "w-full" : "w-[50%]"}
+                    `}
+                  >
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 300px"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
 
-                <div className="relative w-full h-full">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 300px"
-                    className={
-                      item.image === "/about/oil-6.png"
-                        ? "object-cover"
-                        : "object-contain"
-                    }
-                  />
                 </div>
               </div>
 
@@ -97,16 +102,19 @@ export default function AboutProductShowcase() {
                     mt-6 md:mt-0
                     md:ml-6
                     w-full max-w-md md:w-70
-                    bg-white rounded-[20px]
-                    px-7 py-8
+                    bg-white
+                    rounded-[22px]
+                    px-8 py-9
                     shadow-[0_18px_45px_rgba(0,0,0,0.08)]
+                    transition-all duration-500 ease-out
+                    animate-[fadeUp_0.5s_ease-out]
                   "
                 >
-                  <h3 className="text-[20px] leading-snug font-playfair text-[#2b2b2b]">
+                  <h3 className="text-[21px] leading-[1.35] font-playfair text-[#2b2b2b] mb-3">
                     {item.title}
                   </h3>
 
-                  <p className="mt-4 text-[14.5px] leading-[1.75] text-gray-500 font-inter">
+                  <p className="mt-3 text-[14.5px] leading-[1.8] text-[#6f6f6f] font-inter">
                     {item.description}
                   </p>
                 </div>
@@ -115,7 +123,6 @@ export default function AboutProductShowcase() {
           ))}
 
         </div>
-
       </div>
     </section>
   );

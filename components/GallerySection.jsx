@@ -12,12 +12,14 @@ const images = [
 
 export default function GallerySection() {
   return (
+
     <section className="bg-white px-4 md:px-7 ">
       <div className="max-w-7xl mx-auto mb-10  grid grid-cols-1  md:grid-cols-3 gap-1 md:gap-8 ">
         <div className="md:col-span-2">
           <p className="text-md tracking-widest text-gray-500 mb-3">Gallery</p>
           <h2 className="font-playfair text-xl md:text-4xl font-semibold text-[#333333] tracking-wider leading-tight">
             Our Signature Oils, <br />
+
             Crafted with Tradition
           </h2>
         </div>

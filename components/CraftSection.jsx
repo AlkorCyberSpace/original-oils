@@ -10,7 +10,7 @@ const avatars = [
 
 export default function CraftSection() {
   return (
-    <section className="bg-background py-24 px-6">
+    <section className="bg-background py-10 px-6">
       {/* Heading */}
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-serif text-5xl leading-tight text-gray-900">
