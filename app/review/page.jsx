@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import ConnectSection from "@/components/ConnectSection";
 import Review from "@/components/Review";
 
 const reviews = [
@@ -52,7 +51,6 @@ export default function ReviewsPage() {
     return (
         <>
             <Review />
-            <ConnectSection />
         </>
 
     );

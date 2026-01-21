@@ -1,5 +1,4 @@
 import ProductList from "@/components/ProductList";
-import ConnectSection from "@/components/ConnectSection";
 
 export const metadata = {
     title: "Products | Original Oils",
@@ -10,7 +9,6 @@ export default function ProductsPage() {
     return (
         <main>
             <ProductList />
-            <ConnectSection />
         </main>
     );
 }

@@ -4,7 +4,7 @@ export default function BlogPage() {
   return (
     <>
       <TraditionJournal />
-      <div className="mt-28"><ConnectSection /></div>
+      {/* <div className="mt-28"><ConnectSection /></div> */}
     </>
   );
 }

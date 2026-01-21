@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const images = [
   "/gallery/1.png",
@@ -29,7 +31,7 @@ export default function GallerySection() {
       </div>
 
 
-      <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-6">
+      <div className="flex gap-6 overflow-x-auto scrollbar-hide ">
         {images.map((src, index) => (
           <div
             key={index}
@@ -39,16 +41,25 @@ export default function GallerySection() {
               src={src}
               alt="Gallery Image"
               fill
-              className="object-cover w-full h-full" 
+              className="object-cover w-full h-full"
             />
           </div>
         ))}
       </div>
 
-      <div className="flex justify-end mt-8">
-        <button className="px-6 py-2 rounded-full border border-black bg-white text-sm text-black transition-all duration-500 hover:bg-black hover:text-white">
-          View All Photos
-        </button>
+      <div className="flex justify-end ">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.12, delay: 1 }}
+          className="flex justify-center mt-12"
+        >
+          <button className="group relative px-10 py-3.5 overflow-hidden rounded-full border border-[#1a1a1a] text-sm font-bold uppercase tracking-widest text-[#1a1a1a] transition-all hover:text-white">
+            <span className="absolute inset-0 w-0 bg-[#1a1a1a] transition-all duration-300 ease-out group-hover:w-full" />
+            <span className="relative">View Collection</span>
+          </button>
+        </motion.div>
 
       </div>
     </section>

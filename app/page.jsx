@@ -10,25 +10,25 @@ import GallerySection from "@/components/GallerySection";
 import TraditionJournal from "@/components/TraditionJournal";
 // import Testimonials from "@/components/Testimonials";
 import Review from "@/components/Review"
-import ConnectSection from "@/components/ConnectSection";
+// import ConnectSection from "@/components/ConnectSection";
 export default function HomePage() {
   return (
     <>
       <section className="bg-primary min-h-screen ">
-      <Hero />
-      <Statistics />
+        <Hero />
+        <Statistics />
       </section>
       <AboutSection />
       <OilsSection />
-      <HandpickedSection /> 
+      <HandpickedSection />
       <CraftSection />
-      <GallerySection />
+      <GallerySection/>
       <TraditionJournal />
-           <Review />
+      <Review />
 
       {/* <Testimonials /> */}
-      <ConnectSection />
-    
+      {/* <ConnectSection /> */}
+
     </>
   );
 }
