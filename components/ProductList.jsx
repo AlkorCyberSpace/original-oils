@@ -12,7 +12,7 @@ export default function ProductsPage() {
               : products.filter(p => p.category.includes(activeCategory));
 
     return (
-        <main className="min-h-screen bg-white text-foreground px-8 py-18 lg:px-10 ">
+        <main className="min-h-screen bg-white text-foreground px-8 pb-18  lg:px-10 ">
 
             <div className="flex flex-col lg:flex-row justify-between items-start  relative ">
 

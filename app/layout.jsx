@@ -6,6 +6,8 @@ import {
   Kumbh_Sans,
 } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ConnectSection from "@/components/ConnectSection";
 
 export const kumbh = Kumbh_Sans({
   subsets: ["latin"],
@@ -52,6 +54,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <ConnectSection />
       </body>
     </html>
   );
