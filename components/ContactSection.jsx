@@ -138,7 +138,6 @@ function Input({ label, placeholder, type = "text" }) {
     );
 }
 
-/* SOCIAL ICON COMPONENT */
 function SocialIcon({ type }) {
     const icons = {
         instagram: "/instagram.png",

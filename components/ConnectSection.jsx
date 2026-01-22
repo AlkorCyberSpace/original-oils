@@ -40,9 +40,17 @@ export default function ConnectSection() {
             Fresh updates, daily rituals & wellness inspiration —
             <br />straight to WhatsApp.
           </p>
-          <button className="bg-white rounded-3xl text-[#563A1F] text-xs md:text-xs sm:text-sm my-2 px-2 py-1 md:px-4 md:py-0.9 sm:px-1 outline-none">
-            <span className=" flex justify-center gap-2"> CONNECT US <span><ArrowUpRight size={14} /></span></span>
-          </button>
+          <Link
+            href="https://wa.me/918078112788?text=Hi%20Original%20Oils,%20I%20would%20like%20to%20know%20more"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-white rounded-3xl text-[#563A1F] text-xs sm:text-sm my-2 px-2 py-1 md:px-4 md:py-1 outline-none">
+              <span className="flex items-center gap-2">
+                CONNECT US <ArrowUpRight size={14} />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -73,11 +81,6 @@ export default function ConnectSection() {
               <li>
                 <Link href="/gallery/images" className="hover:text-primary transition-colors">
                   Image Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery/videos" className="hover:text-primary transition-colors">
-                  Video Gallery
                 </Link>
               </li>
               <li>

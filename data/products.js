@@ -23,7 +23,7 @@ export const products = [
             "Coconut oil is high in saturated fats, which means it's stable and doesn't appear to change quality during deep frying. This may make coconut oil a good choice for frying.",
         ],
         image: "/products/coconut-oil.jpg",
-        gallery: ["/products/coconut-oil2.png", "/products/cc.png", "/products/coconutOil3.png","/image.png"],
+        gallery: ["/products/coconut-oil2.png", "/products/cc.png", "/products/coconutOil3.png", "/image.png"],
     },
     {
         id: "badam-oil",
@@ -33,10 +33,11 @@ export const products = [
         desc: "Badam Oil is a Heart-healthy monounsaturated fats, skin-nourishing vitamin E, and anti-inflammatory properties.",
         longDesc: "is a Heart-healthy monounsaturated fats, skin-nourishing vitamin E, and anti-inflammatory properties in a low-saturated fat package. Badham Oil is made from Prunus dulcis seeds, starting with harvest and processing, followed by extraction, refining, and meticulous packaging, we ensuring its purity and readiness for applications.    ",
         keyBenefits: [
-            "Oil pulling for improving oral health",
-            "rich in Vitamin E",
-            "It helps in lowering of blood pressure",
-            "Helps in treat premature greying of hair",
+            "Improves Immunity",
+            "Promptes Growth",
+            "Nourishes Skin",
+            "Helps to Digestion",
+            "Provide Glow"
         ],
         howToUse: [
             "Pamper your skin by applying a few drops of almond oil to damp skin. Gently massage to lock in moisture, leaving your skin hydrated and supple.",
@@ -45,7 +46,7 @@ export const products = [
             "Create a soothing massage experience by blending almond oil with your favorite essential oils. Enjoy the relaxing benefits and let the tension melt away.",
         ],
         image: "/products/badham-oil2.png",
-        gallery: ["/products/baaadam.jpg", "/products/badaam4.png", "/products/mask.png","/image.png"],
+        gallery: ["/products/baaadam.jpg", "/products/badaam4.png", "/products/mask.png", "/image.png"],
     },
     {
         id: "dhandha-pala-oil",
@@ -55,10 +56,11 @@ export const products = [
         desc: "Danthapala oil is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits.",
         longDesc: " is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits. Danthapala oil is the purest blend of danthapala leaves with traditionally extracted coconut oil. Researchers have widely studied and accepted the benefits of danthapala oil.Danthapala oil is a wonderful gift from nature for skin and hair care.",
         keyBenefits: [
-            "Oil pulling for improving oral health",
-            "Dental health",
-            "It helps in lowering of blood pressure",
-            "Helps in treat premature greying of hair",
+            "Adds Natural Shine",
+            "Prevents Premature Graying",
+            "Reduces Hair Fall",
+            "Soothes Scalp Irritation",
+            "Promotes Hair Growth"
         ],
         howToUse: [
             "Danthapala oil has the ability to moisturize and nourish the scalp and fight from dandruff.",
@@ -90,7 +92,7 @@ export const products = [
             "drink straight from a spoon"
         ],
         image: "/products/Black-Cumin-Seed-Oil.png",
-        gallery: ["/products/Black-Cumin-Seed-Oil.png","/products/blackcumin2.png","/products/blackcumin3.png","/products/blackcumin4.png" ,"/image.png"],
+        gallery: ["/products/Black-Cumin-Seed-Oil.png", "/products/blackcumin2.png", "/products/blackcumin3.png", "/products/blackcumin4.png", "/image.png"],
     },
     {
         id: "gingelly-oil",
@@ -112,28 +114,30 @@ export const products = [
             "Using dental for strengthening teeth, gums, foil smell."
         ],
         image: "/products/Gingelly-Oil.png",
-        gallery: ["/products/gingelly2.png","/products/gingelly3.png","/products/gingelly4.png", "/image.png"],
+        gallery: ["/products/gingelly2.png", "/products/gingelly3.png", "/products/gingelly4.png", "/image.png"],
     },
     {
         id: "chandra-mukhi-oil",
         title: "Chandra Mukhi Oil",
         category: ["Body Oil"],
         price: "160.00",
-        desc: "Chandramukhi Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients.",
-        longDesc: " a radiant blend of elegance and wellness, combines a host of natural ingredients including almond, chia seed, turmeric, jasmine grandi absolute, tuberose absolute, ylang-ylang, basil, rosemary, lavandin, olibanum, geranium, cedarwood, coconut, gingelly, black seed, mustard, castor, and flaxseed oils. This unique formulation offers benefits such as deep skin moisturization.Preparation of Chandramukhi Body Oil involves a thoughtful selection of premium ingredients, carefully chosen for their individual contributions to skin health and overall well-being. The core foundation comprises a harmonious blend of coconut, gingelly, black seed, mustard, castor, and flaxseed oils, providing a rich base of essential fatty acids.Essential oils, such as jasmine grandi absolute, tuberose absolute, ylang-ylang, basil, rosemary, lavandin, olibanum, geranium, and cedarwood, are then precisely measured and integrated, each offering unique fragrances and therapeutic properties. Herbal extracts, notably turmeric, known for its antioxidant-rich and skin-brightening qualities, are introduced to further enhance the oil's skincare benefits.To elevate the nourishing properties, almond, chia seed, and flaxseed oils are thoughtfully infused into the formulation. The homogenization process ensures a seamless integration of these diverse elements, creating a consistent and well-blended body oil.Fragrance refinement and stringent quality checks follow, ensuring that the Chandramukhi Body Oil attains the highest standards in both olfactory delight and product excellence. Finally, the completed body oil is delicately bottled, labeled with comprehensive information, and stored in optimal conditions, ready to provide a luxurious and sensorial skincare experience that pampers the body and engages the senses in an indulgent journey of elegance and wellness.",
+        desc: "Chandramukhi Oil, is a luxurious blend of natural oils designed for skincare and nourishment.",
+        longDesc: "is a luxurious blend of natural oils designed for skincare and nourishment. It contains ingredients like almond, chia seed, turmeric, jasmine, ylang ylang, basil, rosemary, coconut, gingelly, black seed, mustard, castor, and flaxseed oils. In skincare, it helps moisturize deeply, improve skin softness, and support a healthy glow. Thanks to antioxidants and essential fatty acids, it also helps calm irritation and protect the skin barrier, making it suitable for dry and sensitive skin. The aromatic essential oils provide a soothing sensory experience while supporting overall skin wellness.Chandramukhi Oil is produced by selecting high-quality ingredients and extracting them through cold or mechanical processes to retain nutrients. Base oils are blended with essential oils and herbal extracts like turmeric, which adds antioxidant and brightening properties. The mixture is filtered for clarity and smoothness, then scented and refined for fragrance quality. After strict quality checks, the oil is bottled for skincare and body care use, offering a nourishing, aromatic, and elegant experience.",
         keyBenefits: [
-            "Promotes radiant skin",
-            "Natural ingredients",
-            "Moisturizing",
-            "Soothing aroma",
+            "Anti-Ageing Support",
+            "Chemical-Free Care",
+            "Soothes Irritation",
+            "Soft and Smooth Skin",
+            "Deep Hydration"
         ],
         howToUse: [
-            "Generously apply the oil to your skin, massaging in circular motions. Pay special attention to dry areas for deep hydration.",
-            "Allow the body oil to be absorbed for a few minutes, promoting effective moisturization. Optionally, wrap treated areas for enhanced absorption.",
-            "Incorporate the oil into your regular skincare routine for holistic wellness and a sensory indulgence.",
+            "Chandramukhi Natural Skin Moisturizing Oil has the ability to deeply moisturize and nourish the skin, helping to reduce dryness and roughness.",
+            "Coconut-based oils, one of the best natural ingredients for skin hydration, form the foundation of Chandramukhi oil. Regular application helps keep the skin soft, smooth, and healthy, especially for dry and sensitive skin.",
+            "Chandramukhi oil helps calm irritated and stressed skin, supporting relief from dryness-related discomfort. Continuous use can improve overall skin texture and natural glow.",
+            "The nourishing properties of natural oils help protect the skin barrier and support long-term skin health, making it suitable for daily face and body care."
         ],
         image: "/products/Chandra-Mukhi-Oil.png",
-        gallery: ["/products/Chandra-Mukhi-Oil.png","/products/chandramukhi2.png","/products/chandramukhi3.png","/products/chandramukhi4.png","/image.png"],
+        gallery: ["/products/Chandra-Mukhi-Oil.png", "/products/chandramukhi2.png", "/products/chandramukhi3.png", "/products/chandramukhi4.png", "/image.png"],
     },
     {
         id: "chia-seed-oil",
@@ -143,36 +147,38 @@ export const products = [
         desc: "Chia seed oil, extracted from the seeds of the chia plant is a versatile product with various applications.",
         longDesc: " extracted from the seeds of the chia plant, is a versatile product with various applications. In skincare, it serves as a natural moisturizer and anti-aging agent due to its rich content of omega-3 fatty acids and antioxidants.Additionally, chia seed oil can be applied to hair for deep conditioning, contributing to improved shine and manageability, while also promoting scalp health.chia seed oil can be consumed as a dietary supplement. Rich in essential fatty acids Chia seed oil is made by harvesting chia seeds from the Salvia hispanica plant, cleaning and drying them, and then subjecting them to cold-press extraction, a process that mechanically presses the seeds to obtain the oil while preserving its nutritional benefits. The extracted oil undergoes filtration to remove impurities before being bottled for consumption or cosmetic use.",
         keyBenefits: [
-            "Rich in Omega-3 fatty acids",
-            "Improves skin hydration",
-            "Supports heart health",
+            "Good for heart helps keep your heart healthy",
+            "Helps digestion keeps your stomach working smooth",
+            "Gives energy makes you feel active",
+            "Good for skin supports clear and healthy skin",
+            "Helps in weight control keeps you full for long time"
         ],
         howToUse: {
-  type: "detailed",
-  sections: [
-    {
-      title: "Application for Skincare",
-      description:
-        "After cleansing your face, apply a few drops of chia seed oil to your fingertips and gently massage it into your skin.Allow the oil to absorb before applying other products or makeup. This can be done once or twice daily for a radiant and moisturized complexion."
-    },
-    {
-      title: "Hair and Scalp Treatment",
-      description:
-        "Apply it to your scalp and massage. Extend the application to the lengths of your hair. Leave the oil on for at least an hour, or preferably overnight, before shampooing as usual. This helps nourish the scalp, improve hair texture, and enhance overall hair health."
-    },
-    {
-      title: "Dietary Incorporation",
-      description:
-        "Add a teaspoon of chia seed oil to your smoothies, salad dressings, or other dishes. Start with small amounts, gradually adjusting based on your taste preferences.This dietary inclusion provides a convenient way to benefit from the oil's omega-3 fatty acids and other nutrients."
-    },
-    {
-      title: "Hydration Booster",
-      description:
-        "To boost your overall hydration, consider adding a drop or two of chia seed oil to your regular moisturizer or body lotion. Mix well and apply it to your skin as usual. This method ensures that your skin receives an extra dose of moisture, leaving it soft and supple."
-    }
-  ]
-}
-,
+            type: "detailed",
+            sections: [
+                {
+                    title: "Application for Skincare",
+                    description:
+                        "After cleansing your face, apply a few drops of chia seed oil to your fingertips and gently massage it into your skin.Allow the oil to absorb before applying other products or makeup. This can be done once or twice daily for a radiant and moisturized complexion."
+                },
+                {
+                    title: "Hair and Scalp Treatment",
+                    description:
+                        "Apply it to your scalp and massage. Extend the application to the lengths of your hair. Leave the oil on for at least an hour, or preferably overnight, before shampooing as usual. This helps nourish the scalp, improve hair texture, and enhance overall hair health."
+                },
+                {
+                    title: "Dietary Incorporation",
+                    description:
+                        "Add a teaspoon of chia seed oil to your smoothies, salad dressings, or other dishes. Start with small amounts, gradually adjusting based on your taste preferences.This dietary inclusion provides a convenient way to benefit from the oil's omega-3 fatty acids and other nutrients."
+                },
+                {
+                    title: "Hydration Booster",
+                    description:
+                        "To boost your overall hydration, consider adding a drop or two of chia seed oil to your regular moisturizer or body lotion. Mix well and apply it to your skin as usual. This method ensures that your skin receives an extra dose of moisture, leaving it soft and supple."
+                }
+            ]
+        }
+        ,
         image: "/products/Chia-Seed-Oil.png",
         gallery: ["/products/Chia-Seed2.png", "/products/Chia-Seed3.png", "/products/Chia-Seed4.png", "/image.png"],
     },
@@ -182,16 +188,22 @@ export const products = [
         category: ["Hair Oil"],
         price: "160.00",
         desc: "Ylangi Hair Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients.",
-        longDesc: "Ylangi Hair Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients including almond, chia seed, turmeric, jasmine grandi absolute, tuberose absolute, ylang-ylang, basil, rosemary, lavandin, olibanum, geranium, cedarwood, coconut, gingelly, black seed, mustard, castor, and flaxseed oils. This unique formulation offers benefits such as deep skin moisturization.Preparation of Chandramukhi Body Oil involves a thoughtful selection of premium ingredients, carefully chosen for their individual contributions to skin health and overall well-being. The core foundation comprises a harmonious blend of coconut, gingelly, black seed, mustard, castor, and flaxseed oils, providing a rich base of essential fatty acids.Essential oils, such as jasmine grandi absolute, tuberose absolute, ylang-ylang, basil, rosemary, lavandin, olibanum, geranium, and cedarwood, are then precisely measured and integrated, each offering unique fragrances and therapeutic properties. Herbal extracts, notably turmeric, known for its antioxidant-rich and skin-brightening qualities, are introduced to further enhance the oil's skincare benefits.To elevate the nourishing properties, almond, chia seed, and flaxseed oils are thoughtfully infused into the formulation. The homogenization process ensures a seamless integration of these diverse elements, creating a consistent and well-blended body oil.Fragrance refinement and stringent quality checks follow, ensuring that the Chandramukhi Body Oil attains the highest standards in both olfactory delight and product excellence. Finally, the completed body oil is delicately bottled, labeled with comprehensive information, and stored in optimal conditions, ready to provide a luxurious and sensorial skincare experience that pampers the body and engages the senses in an indulgent journey of elegance and wellness.",
+        longDesc: " is crafted from a rich blend of natural and premium ingredients designed to support both beauty and wellness. It features nourishing base oils such as coconut, gingelly, black seed, mustard, castor, and flaxseed, which help provide essential fatty acids for deep nourishment. To enhance its skincare benefits, oils like almond, chia seed, and flaxseed are infused for added nutrition.A selection of aromatic essential oils — including jasmine grandi absolute, tuberose absolute, ylang-ylang, basil, rosemary, lavandin, olibanum, geranium, and cedarwood — are carefully measured and added for their fragrance and therapeutic qualities. Herbal extracts such as turmeric contribute antioxidant and skin-brightening benefits.",
         keyBenefits: [
-            "Nourishes hair",
-            "Promotes shine",
-            "Natural ingredients",
+            "Deep nourishment from natural base oils.",
+            "Relaxing fragrance from essential oils.",
+            "Antioxidant and skin brightening from turmeric.",
+            "Improves skin softness and hydration",
+            "Smooth feel with a pleasant aroma"
         ],
         howToUse: [
-            "Apply to scalp and hair.",
-            "Massage gently.",
-            "Leave on for at least 30 minutes before washing.",
+            "Ylangi Hair Oil helps nourish and strengthen hair from root to tip, promoting healthy and vibrant hair.",
+            "Infused with Ylang-Ylang and natural oils, it helps balance scalp oil levels, reducing dryness while preventing excess oiliness.",
+            "The soothing aromatic properties help calm the scalp, reduce stress, and support a healthy scalp environment.",
+            "Regular use helps improve hair texture, making hair softer, smoother, and more manageable.",
+            "Supports hair growth by strengthening hair roots and reducing breakage caused by dryness and damage.",
+            "Enhances natural shine and vitality, giving hair a healthy, glossy appearance.",
+            "Suitable for all hair types, including dry, damaged, frizzy, and normal hair."
         ],
         image: "/products/ylangi-Oil.png",
         gallery: ["/products/ylangi2.png", "/products/ylangi3.png", "/products/ylangi4.png"],
@@ -201,17 +213,20 @@ export const products = [
         title: "Kesakala Hair Oil",
         category: ["Hair Oil"],
         price: "160.00",
-        desc: "Kesakala Hair Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients",
-        longDesc: "Kesakala Hair Oil is a specialized formula for hair care. It combines traditional ingredients to support strong and healthy hair.",
+        desc: "Kesakala Hair Oil, is enriched with a blend of natural and nourishing ingredients, including pure Badam (Almond) oil as the key base",
+        longDesc: "is enriched with a blend of natural and nourishing ingredients, including pure Badam (Almond) oil as the key base. The formulation also includes supportive herbal oils and ayurvedic extracts that help improve scalp health and hair strength. These natural components work together to reduce dryness, control dandruff, and encourage healthy hair growth. The presence of almond oil ensures deep nourishment, smooth texture, and long-lasting softness for all hair types.",
         keyBenefits: [
-            "Strengthens hair",
-            "Reduces hair fall",
-            "Promotes scalp health",
+            "Deep Moisturization",
+            "Controls Dandruff",
+            "Boosts Growth",
+            "Strengthens Roots",
+            "Reduces Breakage"
         ],
         howToUse: [
-            "Apply generously to scalp.",
-            "Massage for 5-10 minutes.",
-            "Leave overnight for best results.",
+            "Keshakala hair oil helps nourish the scalp and strengthen hair roots when used regularly.",
+            "Enriched with 100% pure Badam (Almond) oil, it provides deep nourishment to the scalp and supports healthy hair growth. Gentle massage improves blood circulation and helps the oil absorb effectively..",
+            "This Ayurvedic formulation helps reduce dryness, frizz, and hair damage while promoting natural shine and softness. Long-term use can improve hair texture and strength.",
+            "Suitable for all hair types, including dry, damaged, and frizzy hair, making it ideal for regular hair care."
         ],
         image: "/products/Kesakala-Hair-Oil.png",
         gallery: ["/products/Kesakala2.png", "/products/Kesakala3.png", "/products/Kesakala4.png"],
@@ -243,17 +258,18 @@ export const products = [
         desc: "Flaxseed oil, derived from flax plant seeds, is a nutritional powerhouse known for its omega-3 fatty acids and antioxidants.",
         longDesc: "Ylangi Hair Oil is designed to nourish and revitalize your hair. It combines natural ingredients to promote hair health and shine.",
         keyBenefits: [
-            "Nourishes hair",
-            "Promotes shine",
-            "Natural ingredients",
+            "Rich in omega 3 which supports overall health",
+            "Helps maintain a healthy heart and good blood flow",
+            "Supports smooth digestion and gut comfort",
+            "Good for skin and helps reduce dryness",
+            "Supports healthy hair growth and natural shine"
         ],
         howToUse: [
-            "Consume 1-2 tablespoons daily for omega-3 intake.",
-            "Blend into smoothies or drizzle over salads.",
-            "Use as a dressing for cold dishes to preserve nutrients.",
-            "Avoid heating at high temperatures to maintain its integrity.",
-            "Apply topically for skin moisturization.Massage into the scalp or add to hair masks for added shine.",
-            "Add to yogurt or oatmeal for a nutritional boost.Consult a healthcare professional for personalized usage advice."
+            "Flaxseed Oil supports skin moisture and nourishment, helping to balance dryness and rough skin texture.Rich in omega 3 and antioxidants, it gently supports skin hydration and promotes a smoother appearance.",
+            "Cold-pressed flaxseed oil is known for its calming and soothing effects on the skin.Regular application helps keep the skin soft, healthy, and comfortable, especially for dry and sensitive skin types.",
+            "Flaxseed oil helps calm irritated skin and supports relief from dryness-related discomfort. With consistent use, it can improve skin tone, texture, and natural glow.",
+            "Its nutrient-rich composition helps protect the skin barrier and supports long-term skin wellness, making it suitable for daily face and body care routines.",
+            
         ],
         image: "/products/Flax-Seed-Oil.png",
         gallery: ["/products/Flax-Seed2.png", "/products/Flax-Seed3.png", "/products/Flax-Seed4.png", "/image.png"]
@@ -265,16 +281,19 @@ export const products = [
         category: ["Hair Oil"],
         price: "160.00",
         desc: "Coco Rosemary Oil blends traditional coconut oil with rosemary to support stronger hair, healthier roots, and a naturally refreshed scalp.",
-        longDesc: "Kesakala Hair Oil is a specialized formula for hair care. It combines traditional ingredients to support strong and healthy hair.",
+        longDesc: " is a lightweight blend of coconut oil and rosemary that deeply nourishes the scalp, strengthens hair roots, and helps reduce hair fall. It promotes healthy hair growth while leaving hair soft, smooth, and naturally shiny. Suitable for all hair types and for both men and women.",
         keyBenefits: [
-            "Promotes hair growth by improving blood circulation to the scalp.",
-            "Reduces hair fall and helps strengthen hair roots.",
-            "Adds shine & thickness to dull, lifeless hair",
+            "Prevents Premature Graving",
+            "Adds Natural Shine and Softness.",
+            "Combats Dandruff and Scalp Issues",
+            "Reduces Hair Loss and Thinning",
+            "Strengthens and Nourishes Hair"
         ],
         howToUse: [
-            "Apply generously to scalp.",
-            "Massage for 5-10 minutes.",
-            "Leave overnight for best results.",
+            "Coco Rosemary hair oil helps nourish and moisturize the scalp while strengthening hair roots and promoting healthy hair growth.",
+            "Coconut oil, a natural moisturizer, forms the base of Coco Rosemary hair oil and helps reduce dryness, frizz, and hair breakage with regular use.",
+            "Rosemary oil supports scalp health by improving blood circulation and may help reduce dandruff, itching, and dryness when used consistently.",
+            "Long-term use of Coco Rosemary hair oil helps improve hair texture, reduce hair fall, and leave hair soft, shiny, and manageable."
         ],
         image: "/products/Coco-Rosemary-Oil.png",
         gallery: ["/products/rosemary2.png", "/products/rosemary3.png", "/products/rosemary4.png"],

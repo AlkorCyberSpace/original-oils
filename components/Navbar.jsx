@@ -136,7 +136,7 @@ const Navbar = () => {
             (!isHome ? scrolled && isDesktop : !showFullNavbar)) && (
             <button
               onClick={() => setOpen(!open)}
-              className={`transition-all duration-300 ${iconColor}`}
+              className={`transition-all duration-300 bg-white p-2  rounded-3xl  ${iconColor}`}
             >
               {open ? <X size={28} /> : <Menu size={28} />}
             </button>
