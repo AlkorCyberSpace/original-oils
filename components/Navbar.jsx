@@ -26,12 +26,10 @@ const Navbar = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  // ✅ Hydration-safe mount
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // ✅ Screen detection
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 768);
@@ -41,7 +39,6 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // ✅ Scroll logic (HOME)
   useEffect(() => {
     if (!isHome) return;
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -49,7 +46,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
-  // ✅ Scroll logic (other pages – desktop only)
+  //  Scroll logic (other pages – desktop only)
   useEffect(() => {
     if (isHome || !isDesktop) return;
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -70,7 +67,6 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-500">
         <div className="flex items-center justify-between px-6 py-3">
 
-          {/* ✅ LOGO */}
           <Link href="/" onClick={() => setOpen(false)}>
             {(!isDesktop ||
               (isHome
@@ -82,7 +78,7 @@ const Navbar = () => {
                 width={255}
                 height={90}
                 priority
-                className="h-16 sm:h-14 w-auto object-contain transition-all duration-500 -ml-7 sm:ml-0"
+                className="h-16 sm:h-14 w-auto object-contain transition-all duration-500 -ml-7 sm:ml-0 bg-white rounded-full p-2"
               />
             )}
           </Link>
@@ -96,6 +92,7 @@ const Navbar = () => {
                   absolute left-1/2 -translate-x-1/2
                   gap-8 text-sm font-medium
                   ${textColor}
+                  ${showFullNavbar ? "mt-5" : ""}
                 `}
               >
                 {navItems.map((item) => {
@@ -135,7 +132,6 @@ const Navbar = () => {
             </>
           )}
 
-          {/* ✅ HAMBURGER */}
           {(!isDesktop ||
             (!isHome ? scrolled && isDesktop : !showFullNavbar)) && (
             <button

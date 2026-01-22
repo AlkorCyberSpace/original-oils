@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -98,11 +99,11 @@ const AboutSection = () => {
           "
         >
           <Image
-            src="/about-5.jpg"
+            src="/products/cc.png"
             alt="Oil Bottle"
             width={120}
             height={120}
-            className="sm:w-[160px] md:w-[180px] rounded-xl shadow-xl"
+            className="sm:w-[160px] md:w-[180px] lg:w-[220px] rounded-xl shadow-xl"
           />
         </div>
 
@@ -118,11 +119,11 @@ const AboutSection = () => {
           "
         >
           <Image
-            src="/about-2.jpg"
+            src="/products/badhaam2.png"
             alt="Oil Bottle"
-            width={120}
-            height={120}
-            className="sm:w-[160px] md:w-[180px] rounded-xl shadow-xl"
+            width={140}
+            height={140}
+            className="sm:w-[160px] md:w-[180px] lg:w-[220px] rounded-xl shadow-xl"
           />
         </div>
 
@@ -138,11 +139,11 @@ const AboutSection = () => {
           "
         >
           <Image
-            src="/about-3.jpg"
+            src="/products/kesakala3.png"
             alt="Oil Bottle"
             width={120}
             height={120}
-            className="sm:w-[160px] md:w-[180px] rounded-xl shadow-xl"
+            className="sm:w-[160px] md:w-[180px] lg:w-[220px] rounded-xl shadow-xl"
           />
         </div>
 
@@ -158,11 +159,11 @@ const AboutSection = () => {
           "
         >
           <Image
-            src="/about-4.jpg"
+            src="/products/chandramukhi3.png"
             alt="Oil Bottle"
             width={120}
             height={120}
-            className="sm:w-[160px] md:w-[180px] rounded-xl shadow-xl"
+            className="sm:w-[160px] md:w-[180px] lg:w-[220px] rounded-xl shadow-xl"
           />
         </div>
 
@@ -181,9 +182,11 @@ const AboutSection = () => {
             your health and elevate everyday living.
           </p>
 
-         <button className="mt-8 sm:mt-10 px-5 sm:px-8 py-2 sm:py-3 text-sm sm:text-base border border-gray-400 rounded-full text-gray-700 font-medium hover:bg-gray-800 hover:text-white transition duration-300">
-  All Products
-</button>
+          <Link href="/products">
+            <button className="mt-8 sm:mt-10 px-5 sm:px-8 py-2 sm:py-3 text-sm sm:text-base border border-gray-400 rounded-full text-gray-700 font-medium hover:bg-gray-800 hover:text-white transition duration-300">
+              All Products
+            </button>
+          </Link>
 
         </div>
       </section>

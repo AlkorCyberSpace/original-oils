@@ -1,14 +1,14 @@
 import AboutUs from "@/components/AboutUs";
 import AboutStory from "@/components/AboutStory";
 import AboutProductsShowcase from "@/components/AboutProductsShowcase";
-import Testimonials from "@/components/Testimonials";
+import Review from "@/components/Review";
 export default function AboutPage() {
   return (
-    <main>
+    <main className="mx-auto">
       <AboutUs />
       <AboutStory />
       <AboutProductsShowcase />
-      <Testimonials />
+      <Review />
     </main>
   );
 }

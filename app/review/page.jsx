@@ -31,7 +31,7 @@ const reviews = [
         id: 4,
         name: "Arjun",
         role: "Customer",
-        image: "/review1.jpg", // Using placeholder
+        image: "/review1.jpg",
         quote: "The quality is unmatched. I've recommended this to all my family members.",
         stars: 5,
     },
@@ -39,7 +39,7 @@ const reviews = [
         id: 5,
         name: "Meera",
         role: "Customer",
-        image: "/review2.jpg", // Using placeholder
+        image: "/review2.jpg",
         quote: "Finally a natural product that actually works as promised. Love the packaging too!",
         stars: 4,
     },

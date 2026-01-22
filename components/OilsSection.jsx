@@ -7,87 +7,100 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 
 export default function OilsSection() {
-  const imagesRef = useRef([]);
+const imagesRef = useRef([]);
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
+useEffect(() => {
+  if (typeof window === "undefined") return;
 
-    gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-    imagesRef.current.forEach((img) => {
-      if (!img) return;
+  //  Ensure everything is visible immediately
+  gsap.set(imagesRef.current, {
+    y: 0,
+    opacity: 1,
+  });
 
-      gsap.fromTo(
-        img,
-        { y: 40 },
-        {
-          y: -40,
-          scrollTrigger: {
-            trigger: img,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-          },
-        }
-      );
+  imagesRef.current.forEach((img) => {
+    if (!img) return;
+
+    gsap.to(img, {
+      y: -50, 
+      ease: "none",
+      scrollTrigger: {
+        trigger: img,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 0.4,
+        invalidateOnRefresh: true,
+      },
     });
-  }, []);
+  });
+
+  ScrollTrigger.refresh();
+}, []);
 
   const products = [
-    {
-      title: "Coconut Oil",
-      desc: "Coconut oil has many nutrients that can contribute to your health and a good diet.",
-      img: "/coconut.jpg",
-    },
-    {
-      title: "Black cumin seed oil",
-      desc: "Black seed oil is high in antioxidants and may have several benefits for health.",
-      img: "/black-seed.jpg",
-    },
-    {
-      title: "Badam oil",
-      desc: "Badam Oil is a heart-healthy oil rich in vitamin E and anti-inflammatory properties.",
-      img: "/badam.jpg",
-    },
-    {
-      title: "Danthapala",
-      desc: "Danthapala oil is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits.",
-      img: "/Danthapala.jpg",
-    },
-    {
-      title: "Chandra Mukhi Oil",
-      desc: "Chandramukhi Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients.",
-      img: "/Chandra Mukhi.jpg",
-    },
-    {
-      title: "Kesakala Hair Oil",
-      desc: "Kesakala Hair Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients",
-      img: "/Kesakala.jpg",
-    },
-  ];
+  {
+    title: "Coconut Oil",
+    slug: "coconut-oil",
+    desc: "Coconut oil has many nutrients that can contribute to your health and a good diet.",
+    img: "/immage.png",
+  },
+  {
+    title: "Black cumin seed oil",
+    slug: "black-cumin-seed-oil",
+    desc: "Black seed oil is high in antioxidants and may have several benefits for health.",
+    img: "/black-seed.jpg",
+  },
+  {
+    title: "Badam oil",
+    slug: "badam-oil",
+    desc: "Badam Oil is a heart-healthy oil rich in vitamin E and anti-inflammatory properties.",
+    img: "/badam.jpg",
+  },
+  {
+    title: "Danthapala",
+    slug: "danthapala",
+    desc: "Danthapala oil is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits.",
+    img: "/Danthapala.jpg",
+  },
+  {
+    title: "Chandra Mukhi Oil",
+    slug: "chandra-mukhi-oil",
+    desc: "Chandramukhi Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients.",
+    img: "/Chandra Mukhi.jpg",
+  },
+  {
+    title: "Kesakala Hair Oil",
+    slug: "kesakala-hair-oil",
+    desc: "Kesakala Hair Oil, a radiant blend of elegance and wellness, combines a host of natural ingredients",
+    img: "/aboutt.png",
+  },
+];
+
 
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl min-h-[160vh] px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+    <section className="bg-white py-20">
+      <div className="mx-auto  min-h-[140vh] px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-14">
 
           {/* LEFT – STICKY */}
           <div className="lg:sticky lg:top-24 h-fit">
-            <p className="text-sm uppercase tracking-wide text-gray-500">
+            <p className="text-xs uppercase tracking-widest text-gray-500">
               Traditionally Crafted Oils
             </p>
 
-            <h1 className="mt-4 text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
+            <h1 className="mt-4 text-4xl md:text-5xl font-playfair font-semibold text-[#333333] leading-tight">
               Pure Oils,<br />Timeless Benefits
             </h1>
 
-            <p className="mt-6 text-gray-600 max-w-md">
+            <p className="mt-5 text-[#666666sm] max-w-sm tracking-wide leading-relaxed">
               Pure, cold-pressed oils made with heritage methods to nourish your
               lifestyle from the inside out.
             </p>
 
-            {/* ROUND TAGS */}
-            <div className="mt-8 flex flex-wrap gap-3 max-w-lg">
+            {/* TAGS */}
+            <div className="mt-6 flex flex-wrap gap-2 max-w-md">
               {[
                 "Coconut Oil",
                 "Black Seed Oil",
@@ -97,20 +110,20 @@ export default function OilsSection() {
                 "Dhandha pala Oil",
                 "Chandramukhi Body oil",
                 "Keshakala Oil",
+                "Chia Seed Oil"
               ].map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-gray-300 px-4 py-1.5 text-sm text-gray-600 hover:bg-gray-100 transition cursor-default"
+                  className="rounded-full border border-gray-300 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 transition cursor-default"
                 >
                   {item}
                 </span>
               ))}
             </div>
 
-            {/* FULL PRODUCT LIST */}
             <Link
               href="/products"
-              className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-gray-800 group"
+              className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-[#666666] border border-[#666666] rounded-2xl px-4 py-1.5 group"
             >
               Full Product List
               <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
@@ -119,38 +132,47 @@ export default function OilsSection() {
             </Link>
           </div>
 
-          {/* RIGHT – COMPACT SCROLL */}
-          <div className="space-y-12">
+          {/* RIGHT – SMOOTH COMPACT LIST */}
+          <div className="space-y-4">
             {products.map((product, index) => (
               <div
                 key={index}
                 ref={(el) => {
                   if (el) imagesRef.current[index] = el;
                 }}
-                className="flex gap-5 items-start"
+                className="group flex gap-4 items-start rounded-xl p-3 transition hover:bg-gray-50"
               >
-                <div className="rounded-xl w-48 shrink-0">
+                {/* IMAGE */}
+                <div className="rounded-lg w-44 md:w-44 lg:w-69 shrink-0 overflow-hidden">
                   <Image
                     src={product.img}
                     alt={product.title}
-                    width={400}
-                    height={600}
-                    className="object-contain w-full h-auto"
+                    width={350}
+                    height={500}
+                    className="object-contain w-full h-auto transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-serif text-gray-900">
+                {/* TEXT */}
+                <div className="flex flex-col gap-10 justify-between">
+                  <h3 className="text-base font-serif text-gray-900">
                     {product.title}
                   </h3>
 
-                  <p className="mt-1 text-sm text-gray-600 max-w-xs">
+                  <p className="mt-1 text-sm sm:text-sm md:text-lg lg:text-lg text-gray-600 max-w-xs leading-relaxed">
                     {product.desc}
                   </p>
 
-                  <button className="mt-2 text-sm text-gray-700 hover:text-black flex items-center gap-1">
-                    View details <span>→</span>
-                  </button>
+                 <Link
+  href={`/products/${product.slug}`}
+  className="mt-2 text-xs sm:text-xs lg:text-xl text-gray-700 hover:text-black flex items-center gap-1 transition group"
+>
+  View details
+  <span className="transition-transform duration-300 group-hover:translate-x-1">
+    →
+  </span>
+</Link>
+
                 </div>
               </div>
             ))}

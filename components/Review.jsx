@@ -3,28 +3,29 @@ import Image from "next/image";
 import { useState } from "react";
 
 const reviews = [
-    {
+     {
         id: 1,
+        name: "Swetha",
+        role: "Customer",
+        image: "/review1.png",
+        quote: "A big fan of their hair oils. It's made with edible-quality oils, and that makes a difference.",
+        stars: 5,
+    },
+    
+    {
+        id: 2,
         name: "Sana",
         role: "Customer",
         image: "/avatar2.jpeg", 
         quote: "I am a big fan of their hair oils, made from edible-quality oils — and that makes the difference.",
         stars: 5,
     },
-    {
-        id: 2,
+   {
+        id: 3,
         name: "Anusree",
         role: "Customer",
         image: "/revieww.jpg",
         quote: "My grandma never entertained junk food or cosmetics, yet she strongly believed in a hair oil made by a coconut oil mill in our village.",
-        stars: 5,
-    },
-    {
-        id: 3,
-        name: "Swetha",
-        role: "Customer",
-        image: "/review1.png",
-        quote: "A big fan of their hair oils. It's made with edible-quality oils, and that makes a difference.",
         stars: 5,
     },
     {

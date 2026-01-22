@@ -46,7 +46,7 @@ const cardVariants = {
 
 export default function TraditionJournal() {
   return (
-    <section className="bg-white px-6 md:px-8 py-7 overflow-hidden">
+    <section className="bg-white px-6 md:px-8 py-15 overflow-hidden">
       <motion.div
         className="grid md:grid-cols-2 gap-2 mb-10 items-center"
         initial={{ opacity: 0, y: 20 }}
