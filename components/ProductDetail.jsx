@@ -36,7 +36,7 @@ export default function ProductDetail({ product }) {
                 aria-label="Go back"
                 title="Back"
                 className="inline-flex items-center justify-center 
-               bg-[#ffffff] text-black hover:bg-black 
+               bg-background text-black hover:bg-black 
                hover:text-white rounded-full p-3 
                transition-colors"
             >
@@ -125,9 +125,15 @@ export default function ProductDetail({ product }) {
                         </ul>
                     </div>
 
-                    <button className="bg-[#4a3b2a] text-white px-30 py-3 rounded-full text-sm font-medium tracking-wide hover:bg-[#352900] transition-colors mb-12">
-                        Order now
-                    </button>
+                    <Link
+                        href="https://wa.me/918078112788?text=Hi%20Original%20Oils,%20I%20want%20to%20place%20an%20order"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className="bg-[#4a3b2a] text-white px-30 py-3 rounded-full text-sm font-medium tracking-wide hover:bg-[#352900] transition-colors mb-12">
+                            Order now
+                        </button>
+                    </Link>
                 </div>
 
             </div>
