@@ -1,3 +1,5 @@
+"use client";
+
 import "./globals.css";
 import {
   Playfair_Display,
@@ -5,9 +7,12 @@ import {
   UnifrakturCook,
   Kumbh_Sans,
 } from "next/font/google";
+import { useEffect, useState } from "react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ConnectSection from "@/components/ConnectSection";
+import IntroLoader from "@/components/IntroLoader";
 
 export const kumbh = Kumbh_Sans({
   subsets: ["latin"],
@@ -33,12 +38,19 @@ export const unifraktur = UnifrakturCook({
   variable: "--font-gothic",
 });
 
-export const metadata = {
-  title: "True Kerala Coconut Oil",
-  description: "60 Years in Oil Milling",
-};
+// ❌ metadata REMOVED (cannot exist in client component)
 
 export default function RootLayout({ children }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
@@ -52,9 +64,15 @@ export default function RootLayout({ children }) {
           font-kumbh
         `}
       >
-        <Navbar />
-        {children}
-        <ConnectSection />
+        {loading && <IntroLoader />}
+
+        {!loading && (
+          <>
+            <Navbar />
+            {children}
+            <ConnectSection />
+          </>
+        )}
       </body>
     </html>
   );
