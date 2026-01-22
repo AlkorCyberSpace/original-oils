@@ -13,8 +13,8 @@ const videos = [
 
 export default function VideoSection() {
   return (
-    <section className="px-6 md:px-10 pb-10 bg-white ">
-      <div className="max-w-7xl mx-auto">
+    <section className="px-6 md:px-10 pb-10 bg-white mt-10 ">
+      <div className=" mx-auto">
         {/* Heading */}
         <div className="mb-6">
           <p className="text-sm tracking-widest text-gray-500 uppercase">

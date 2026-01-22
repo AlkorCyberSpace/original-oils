@@ -64,7 +64,7 @@ export default function ProductDetail({ product }) {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                 <div className="space-y-6">
-                    <div className="relative w-full aspect-7/5 sm:aspect-6/5 md:aspect-8/6 overflow-hidden bg-[#f3f3f3] rounded-3xl flex items-center justify-center">
+                    <div className="relative w-full aspect-7/5 sm:aspect-6/5 md:aspect-8/6 overflow-hidden bg-[#ffffff] rounded-3xl flex items-center justify-center">
                         <Image
                             src={currentImage}
                             alt={product.title}
@@ -81,7 +81,7 @@ export default function ProductDetail({ product }) {
                                 <div
                                     key={idx}
                                     onClick={() => setCurrentImage(img)}
-                                    className={`relative w-20 h-20 bg-[#f8f8f8] rounded-xl overflow-hidden cursor-pointer border-2 transition-all ${currentImage === img
+                                    className={`relative w-20 h-20 bg-[#ffffff] rounded-xl overflow-hidden cursor-pointer border-2 transition-all ${currentImage === img
                                         ? "border-[#4a3b2a]"
                                         : "border-transparent hover:border-gray-300"
                                         }`}

@@ -23,7 +23,7 @@ export const products = [
             "Coconut oil is high in saturated fats, which means it's stable and doesn't appear to change quality during deep frying. This may make coconut oil a good choice for frying.",
         ],
         image: "/products/coconut-oil.jpg",
-        gallery: ["/products/coconut-oil2.png", "/products/cc.png", "/products/coconutOil3.png","/products/frame.png"],
+        gallery: ["/products/coconut-oil2.png", "/products/cc.png", "/products/coconutOil3.png","/image.png"],
     },
     {
         id: "badam-oil",
@@ -45,7 +45,7 @@ export const products = [
             "Create a soothing massage experience by blending almond oil with your favorite essential oils. Enjoy the relaxing benefits and let the tension melt away.",
         ],
         image: "/products/badham-oil2.png",
-        gallery: ["/products/baaadam.jpg", "/products/badaam4.png", "/products/mask.png","/products/frame.png"],
+        gallery: ["/products/baaadam.jpg", "/products/badaam4.png", "/products/mask.png","/image.png"],
     },
     {
         id: "dhandha-pala-oil",
@@ -67,7 +67,7 @@ export const products = [
             "Danthapala leaves are very helpful in fighting malignant melanoma.",
         ],
         image: "/products/dandhapala-oil.jpg",
-        gallery: ["/products/dandhapala2.png", "/products/dandhapala3.png", "/products/dandhapala4.png", ],
+        gallery: ["/products/dandhapala2.png", "/products/dandhapala3.png", "/products/dandhapala4.png", "/image.png"],
     },
     {
         id: "black-cumin-seed-oil",
@@ -90,7 +90,7 @@ export const products = [
             "drink straight from a spoon"
         ],
         image: "/products/Black-Cumin-Seed-Oil.png",
-        gallery: ["/products/Black-Cumin-Seed-Oil.png"],
+        gallery: ["/products/Black-Cumin-Seed-Oil.png","/products/blackcumin2.png","/products/blackcumin3.png","/products/blackcumin4.png" ,"/image.png"],
     },
     {
         id: "gingelly-oil",
@@ -112,7 +112,7 @@ export const products = [
             "Using dental for strengthening teeth, gums, foil smell."
         ],
         image: "/products/Gingelly-Oil.png",
-        gallery: ["/products/gingelly2.png","/products/gingelly3.png","/products/gingelly4.png", ],
+        gallery: ["/products/gingelly2.png","/products/gingelly3.png","/products/gingelly4.png", "/image.png"],
     },
     {
         id: "chandra-mukhi-oil",
@@ -133,7 +133,7 @@ export const products = [
             "Incorporate the oil into your regular skincare routine for holistic wellness and a sensory indulgence.",
         ],
         image: "/products/Chandra-Mukhi-Oil.png",
-        gallery: ["/products/Chandra-Mukhi-Oil.png"],
+        gallery: ["/products/Chandra-Mukhi-Oil.png","/products/chandramukhi2.png","/products/chandramukhi3.png","/products/chandramukhi4.png","/image.png"],
     },
     {
         id: "chia-seed-oil",
@@ -174,7 +174,7 @@ export const products = [
 }
 ,
         image: "/products/Chia-Seed-Oil.png",
-        gallery: ["/products/Chia-Seed2.png", "/products/Chia-Seed3.png", "/products/Chia-Seed4.png"],
+        gallery: ["/products/Chia-Seed2.png", "/products/Chia-Seed3.png", "/products/Chia-Seed4.png", "/image.png"],
     },
     {
         id: "ylangi-hair-oil",
@@ -256,7 +256,7 @@ export const products = [
             "Add to yogurt or oatmeal for a nutritional boost.Consult a healthcare professional for personalized usage advice."
         ],
         image: "/products/Flax-Seed-Oil.png",
-        gallery: ["/products/Flax-Seed2.png", "/products/Flax-Seed3.png", "/products/Flax-Seed4.png"]
+        gallery: ["/products/Flax-Seed2.png", "/products/Flax-Seed3.png", "/products/Flax-Seed4.png", "/image.png"]
 
     },
     {

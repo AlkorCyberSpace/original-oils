@@ -20,7 +20,7 @@ const media = [
   },
   {
     type: "image",
-    src: "/oil-bottless.png",
+    src: "/about-2.jpg ",
     className: "md:col-span-1 md:row-span-1",
   },
   {
@@ -30,13 +30,13 @@ const media = [
   },
   {
     type: "video",
-    src: "/Dhanthapala-1.mp4",
+    src: "/video2.mp4",
 
     className: "md:col-span-2 md:row-span-1",
   },
   {
     type: "image",
-    src: "/gallery/8.png",
+    src: "/oil-bottless.png",
     className: "md:col-span-1 md:row-span-2",
   },
   {
@@ -51,12 +51,12 @@ const media = [
   },
   {
     type: "image",
-    src: "/gallery/3.png",
+    src: "/black-seed.jpg",
     className: "md:col-span-1 md:row-span-1",
   },
   {
     type: "image",
-    src: "/gallery/4.png",
+    src: "/gallery/1.png",
     className: "md:col-span-1 md:row-span-1",
   },
 ];
@@ -86,7 +86,7 @@ export default function GallerySection2() {
 
   return (
     <section id="gallery" className="bg-white px-4 md:px-10">
-      <div className="max-w-7xl mx-auto mb-5 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div className=" mx-auto mb-5 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -111,7 +111,8 @@ export default function GallerySection2() {
           className="max-w-md md:text-right"
         >
           <p className="text-gray-500 text-lg font-light leading-relaxed">
-            Experience the harmony of nature and tradition through our visual chronicles.
+           Bring purity and tradition into <br/>
+your daily rituals with our finest oils.
           </p>
         </motion.div>
       </div>
@@ -121,7 +122,7 @@ export default function GallerySection2() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
-        className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-2 auto-rows-[150px] md:auto-rows-[220px]"
+        className=" mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-2 auto-rows-[150px] md:auto-rows-[220px]"
       >
         {media.map((item, i) => (
 
@@ -176,7 +177,7 @@ export default function GallerySection2() {
         ))}
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -187,7 +188,7 @@ export default function GallerySection2() {
           <span className="absolute inset-0 w-0 bg-[#1a1a1a] transition-all duration-300 ease-out group-hover:w-full" />
           <span className="relative">View Collection</span>
         </button>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

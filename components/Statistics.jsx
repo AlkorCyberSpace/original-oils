@@ -31,7 +31,7 @@ const fadeUp = {
 
 const Statistics = () => {
   return (
-    <section className="w-full bg-[#f7f7f5] pt-20 pb-28 -mt-10 overflow-hidden">
+    <section className="w-full bg-[#f7f7f5] pt-18 pb-18 -mt-10 overflow-hidden">
       
       <motion.div
         initial={{ opacity: 0 }}
@@ -48,7 +48,7 @@ const Statistics = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-gray-800 leading-tight"
+          className="font-playfair text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-800 leading-tight"
         >
           Business Build on <br />
           Honesty and Trust
@@ -71,7 +71,7 @@ className="mt-4 text-sm sm:text-base text-gray-500 max-w-2xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {[
             {
@@ -114,10 +114,10 @@ className="mt-4 text-sm sm:text-base text-gray-500 max-w-2xl mx-auto"
               className="bg-white rounded-2xl p-8 py-6 shadow-sm"
             >
               <p className="text-sm text-gray-500 mb-6">{item.title}</p>
-              <h3 className="font-serif text-6xl font-medium text-gray-800">
+              <h3 className="font-playfair text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-800">
                 {item.value}
               </h3>
-              <p className="mt-6 text-sm text-gray-500 leading-relaxed">
+              <p className="mt-6 text-xs sm:text-xs md:text-sm lg:text-md text-gray-500 leading-relaxed">
                 {item.desc}
               </p>
             </motion.div>

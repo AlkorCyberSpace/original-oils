@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const products = [
   {
@@ -49,7 +50,7 @@ const HandpickedSection = () => {
       </motion.div>
 
       {/* Products */}
-      <div className="-mt-7 grid grid-cols-3 md:grid-cols-3 gap-2 max-w-5xl mx-auto">
+      <div className=" grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2  mx-auto">
         {products.map((product, index) => (
           <motion.div
             key={index}
@@ -65,17 +66,17 @@ const HandpickedSection = () => {
             }}
             whileHover={{ y: -6 }}
           >
-            <div className="relative w-full h-65 flex items-center justify-center md:mt-6">
+            <div className="relative w-full  flex items-center justify-center md:mt-6">
               <Image
                 src={product.image}
                 alt={product.title}
-                width={210}
-                height={300}
-                className="object-contain transition-transform duration-700 ease-out hover:scale-105"
+                width={390}
+                height={330}
+                className="object-contain   transition-transform duration-700 ease-out hover:scale-105"
               />
             </div>
 
-<p className="-mt-7 md:mt-2 text-gray-700 text-sm tracking-wide">
+            <p className="mt-7 text-gray-700 text-sm tracking-wide">
               {product.title}
             </p>
           </motion.div>
@@ -91,9 +92,11 @@ const HandpickedSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-       <button className="rounded-full border border-black bg-white px-9 py-2.5 text-xs tracking-[0.2em] text-black transition-all duration-500 hover:bg-black hover:text-white">
-  View Shop
-</button>
+        <Link href="/products">
+          <button className="rounded-full border border-black bg-white px-9 py-2.5 text-xs tracking-[0.2em] text-black transition-all duration-500 hover:bg-black hover:text-white">
+            View Shop
+          </button>
+        </Link>
 
       </motion.div>
     </section>
