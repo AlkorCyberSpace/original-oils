@@ -229,7 +229,7 @@ export const products = [
             "Suitable for all hair types, including dry, damaged, and frizzy hair, making it ideal for regular hair care."
         ],
         image: "/products/Kesakala-Hair-Oil.png",
-        gallery: ["/products/Kesakala2.png", "/products/Kesakala3.png", "/products/Kesakala4.png"],
+        gallery: ["/products/kesakala2.png", "/products/kesakala3.png", "/products/kesakala4.png"],
     },
     // {
     //     id: "mustard-oil",
