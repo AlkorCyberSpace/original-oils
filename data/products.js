@@ -180,7 +180,7 @@ export const products = [
         }
         ,
         image: "/products/Chia-Seed-Oil.png",
-        gallery: ["/products/Chia-Seed2.png", "/products/Chia-Seed3.png", "/products/Chia-Seed4.png", "/image.png"],
+        gallery: ["/products/chia-seed2.png", "/products/chia-seed3.png", "/products/chia-seed4.png", "/image.png"],
     },
     {
         id: "ylangi-hair-oil",
@@ -272,7 +272,7 @@ export const products = [
             
         ],
         image: "/products/Flax-Seed-Oil.png",
-        gallery: ["/products/Flax-Seed2.png", "/products/Flax-Seed3.png", "/products/Flax-Seed4.png", "/image.png"]
+        gallery: ["/products/flax-seed2.png", "/products/flax-seed3.png", "/products/flax-seed4.png", "/image.png"]
 
     },
     {
