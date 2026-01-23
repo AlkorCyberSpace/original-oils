@@ -20,7 +20,7 @@ const media = [
   },
   {
     type: "image",
-    src: "/about-2.jpg ",
+    src: "/about-2.jpg",
     className: "md:col-span-1 md:row-span-1",
   },
   {
