@@ -7,7 +7,7 @@ import Link from "next/link";
 const products = [
   {
     title: "Coconut Oil",
-    image: "/Coconut oil 1.png",
+    image: "/Coconut-oil-1.png",
   },
   {
     title: "Badam Oil",
