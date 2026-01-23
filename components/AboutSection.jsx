@@ -123,6 +123,7 @@ const AboutSection = () => {
             alt="Oil Bottle"
             width={140}
             height={140}
+            priority
             className="sm:w-[160px] md:w-[180px] lg:w-[220px] rounded-xl shadow-xl"
           />
         </div>
@@ -143,6 +144,7 @@ const AboutSection = () => {
             alt="Oil Bottle"
             width={120}
             height={120}
+            priority
             className="sm:w-[160px] md:w-[180px] lg:w-[220px] rounded-xl shadow-xl"
           />
         </div>
