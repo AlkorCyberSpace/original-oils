@@ -46,7 +46,7 @@ export const products = [
             "Create a soothing massage experience by blending almond oil with your favorite essential oils. Enjoy the relaxing benefits and let the tension melt away.",
         ],
         image: "/products/badham-oil2.png",
-        gallery: ["/products/baaadam.jpeg", "/products/bbadaam4 (1).png", "/products/mask.png", "/image.png"],
+        gallery: ["/products/baaadam.jpeg", "/products/bbadaam4-(1).png", "/products/mask.png", "/image.png"],
     },
     {
         id: "dhandha-pala-oil",
