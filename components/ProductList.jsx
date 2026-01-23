@@ -93,6 +93,7 @@ export default function ProductsPage() {
                                 src={product.image}
                                 alt={product.title}
                                 fill
+                                priority
                                 className="object-contain w-full h-full transition-all duration-500 group-hover:scale-105 group-hover:blur-[2px]"
 
                             />
