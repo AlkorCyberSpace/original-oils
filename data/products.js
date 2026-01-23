@@ -68,7 +68,7 @@ export const products = [
             "Danthapala oil can work with the symptoms of dermatitis and can help calm the skin. This use can provide very good results.",
             "Danthapala leaves are very helpful in fighting malignant melanoma.",
         ],
-        image: "/products/dandhapala-oil.jpg",
+        image: "/products/dandhapala-oil.jpeg",
         gallery: ["/products/dandhapala2.png", "/products/dandhapala3.png", "/products/dandhapala4.png", "/image.png"],
     },
     {
