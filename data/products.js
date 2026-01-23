@@ -22,7 +22,7 @@ export const products = [
             "Simply warm the coconut oil and apply it to dry hair, using a wide-tooth comb to distribute the oil evenly, starting at the midsection of your hair and continuing to the ends. For a quick treatment, leave it on for 30 minutes, then shampoo and condition your hair as usual.",
             "Coconut oil is high in saturated fats, which means it's stable and doesn't appear to change quality during deep frying. This may make coconut oil a good choice for frying.",
         ],
-        image: "/products/coconut-oil.jpg",
+        image: "/products/coconut-oil.jpeg",
         gallery: ["/products/coconut-oil2.png", "/products/cc.png", "/products/coconutOil3.png", "/image.png"],
     },
     {
