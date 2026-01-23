@@ -205,7 +205,7 @@ export const products = [
             "Enhances natural shine and vitality, giving hair a healthy, glossy appearance.",
             "Suitable for all hair types, including dry, damaged, frizzy, and normal hair."
         ],
-        image: "/products/ylangi-Oil.png",
+        image: "/products/ylangi-oil.png",
         gallery: ["/products/ylangi2.png", "/products/ylangi3.png", "/products/ylangi4.png"],
     },
     {
