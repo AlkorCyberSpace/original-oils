@@ -8,6 +8,7 @@ const products = [
   {
     title: "Coconut Oil",
     image: "/coconutoil.png",
+    
   },
   {
     title: "Badam Oil",
