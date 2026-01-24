@@ -59,9 +59,9 @@ useEffect(() => {
     img: "/badam.jpg",
   },
   {
-    title: "Danthapala",
-    slug: "danthapala",
-    desc: "Danthapala oil is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits.",
+    title: "Dhandapala Dandruff Oil",
+    slug: "dhandha-pala-oil",
+    desc: "Dhandapala Dandruff Oil is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits.",
     img: "/Danthapala.jpg",
   },
   {
