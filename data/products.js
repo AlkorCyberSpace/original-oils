@@ -50,11 +50,11 @@ export const products = [
     },
     {
         id: "dhandha-pala-oil",
-        title: "Dhandha pala Oil",
+        title: "Dhandapala Dandruff oil",
         category: ["Hair Oil"],
         price: "160.00",
-        desc: "Danthapala oil is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits.",
-        longDesc: " is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits. Danthapala oil is the purest blend of danthapala leaves with traditionally extracted coconut oil. Researchers have widely studied and accepted the benefits of danthapala oil.Danthapala oil is a wonderful gift from nature for skin and hair care.",
+        desc: "Dhandapala Dandruff oil is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits.",
+        longDesc: " is made from shwetha kutaja leaves and coconut oil has high therapeutic benefits. Dhandapala Dandruff oil is the purest blend of danthapala leaves with traditionally extracted coconut oil. Researchers have widely studied and accepted the benefits of Dhandapala Dandruff oil. Dhandapala Dandruff oil is a wonderful gift from nature for skin and hair care.",
         keyBenefits: [
             "Adds Natural Shine",
             "Prevents Premature Graying",
@@ -63,9 +63,9 @@ export const products = [
             "Promotes Hair Growth"
         ],
         howToUse: [
-            "Danthapala oil has the ability to moisturize and nourish the scalp and fight from dandruff.",
+            "Dhandapala Dandruff oil has the ability to moisturize and nourish the scalp and fight from dandruff.",
             "Coconut oil, one of the greatest natural items for moisturizing skin, is the foundation of this oil. Those with dry skin might benefit from regular oil application.",
-            "Danthapala oil can work with the symptoms of dermatitis and can help calm the skin. This use can provide very good results.",
+            "Dhandapala Dandruff oil can work with the symptoms of dermatitis and can help calm the skin. This use can provide very good results.",
             "Danthapala leaves are very helpful in fighting malignant melanoma.",
         ],
         image: "/products/dandhapala-oil.jpeg",
