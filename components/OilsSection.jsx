@@ -107,7 +107,7 @@ useEffect(() => {
                 "Badam Oil",
                 "Coco Rosemary",
                 "Gingelly Oil",
-                "Dhandha pala Oil",
+                "Dhandapala Dandruff Oil",
                 "Chandramukhi Body oil",
                 "Keshakala Oil",
                 "Chia Seed Oil"
