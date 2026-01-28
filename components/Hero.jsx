@@ -162,6 +162,7 @@ const Hero = () => {
             width={700}
             height={700}
             priority
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="w-full h-auto object-contain drop-shadow-2xl"
           />
         </div>
