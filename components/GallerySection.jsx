@@ -87,6 +87,8 @@ export default function GallerySection() {
                   transition: { duration: 0.4, ease: "circIn" }
                 }}
                 style={{
+                  width: 300,  // Fixed large size
+                  height: 300,
                   left: mousePos.x,
                   top: mousePos.y,
                   translateX: "-50%",
