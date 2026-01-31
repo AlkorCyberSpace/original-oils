@@ -113,8 +113,8 @@ export default function ConnectSection() {
                 <Phone size={16} /> <span className=" underline-offset-1 group-hover:underline">+91 8078112788</span>
               </p>
 
-              <a
-                href="mailto:info@originaloils.org"
+             <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=info@originaloils.org"
                 className="flex gap-3 items-center cursor-pointer group"
               >
                 <Mail size={16} />
