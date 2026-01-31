@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const avatars = [
   "/avatar1.jpg",
@@ -87,15 +88,18 @@ export default function CraftSection() {
             </div>
 
             {/* CTA */}
-            <div className="mt-8 flex items-center gap-4 text-gray-700 cursor-pointer group">
+             <Link
+              href="/review"
+              className="mt-8 flex items-center gap-4 text-gray-700 group"
+            >
               <span className="text-sm font-medium">
                 Read Testimonials
               </span>
-
+            
               <span className="w-11 h-11 rounded-full border border-gray-400 flex items-center justify-center transition group-hover:bg-gray-900 group-hover:text-white">
                 →
               </span>
-            </div>
+            </Link>
           </div>
         </div>
 
