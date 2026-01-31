@@ -84,7 +84,7 @@ export default function ConnectSection() {
                 </Link>
               </li>
               <li>
-                <Link href="/reviews" className="hover:text-primary transition-colors">
+                <Link href="/review" className="hover:text-primary transition-colors">
                   Customer Review
                 </Link>
               </li>
