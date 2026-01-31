@@ -45,8 +45,12 @@ export default function ContactSection() {
                         <div className="space-y-5 pl-2 lg:pl-6 z-20 relative">
                             <div>
                                 <h3 className="text-2xl font-medium text-[#333333] mb-1">Contact Us</h3>
-                                <a href="mailto:info@originaloils.org" className="text-gray-500 text-lg border-b border-gray-400 pb-0.5 hover:text-black transition-colors">
-                                    info@originaloils.org
+                                <a
+                                  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@originaloils.org"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  info@originaloils.org
                                 </a>
                             </div>
 
