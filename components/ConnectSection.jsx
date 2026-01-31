@@ -104,14 +104,29 @@ export default function ConnectSection() {
             </p>
 
             <div className="space-y-3 text-xs">
-              <p className="flex gap-3 items-start">
+               <a
+                href="https://www.google.com/maps/search/?api=1&query=Original+Oils+Edathadan+Building+Aloor+Chalakudy+Irinjalakuda+Road+Thrissur+Kerala"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-3 items-start group"
+              >
                 <MapPin size={18} />
-                <span className=" w-75">Original Oils Edathadan Building, Aloor Chalakudy – Irinjalakuda Road, Thrissur, Kerala.</span>
-              </p>
+                <span className="w-75 group-hover:underline">
+                  Original Oils Edathadan Building, Aloor Chalakudy – Irinjalakuda Road, Thrissur, Kerala.
+                </span>
+              </a>
+              >
+              
+                            <a
+                href="tel:+918078112788"
+                className="flex gap-3 items-center group"
+              >
+                <Phone size={16} />
+                <span className="underline-offset-1 group-hover:underline">
+                  +91 8078112788
+                </span>
+              </a>
 
-              <p className="flex gap-3 items-center cursor-pointer group">
-                <Phone size={16} /> <span className=" underline-offset-1 group-hover:underline">+91 8078112788</span>
-              </p>
 
              <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@originaloils.org"
