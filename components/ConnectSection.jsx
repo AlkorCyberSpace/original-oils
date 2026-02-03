@@ -115,7 +115,7 @@ export default function ConnectSection() {
                   Original Oils Edathadan Building, Aloor Chalakudy – Irinjalakuda Road, Thrissur, Kerala.
                 </span>
               </a>
-              >
+              
               
                             <a
                 href="tel:+918078112788"
