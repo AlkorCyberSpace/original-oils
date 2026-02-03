@@ -22,8 +22,8 @@ export const products = [
             "Simply warm the coconut oil and apply it to dry hair, using a wide-tooth comb to distribute the oil evenly, starting at the midsection of your hair and continuing to the ends. For a quick treatment, leave it on for 30 minutes, then shampoo and condition your hair as usual.",
             "Coconut oil is high in saturated fats, which means it's stable and doesn't appear to change quality during deep frying. This may make coconut oil a good choice for frying.",
         ],
-        image: "/products/coconut-oil.jpeg",
-        gallery: ["/products/coconut-oil2.png", "/products/cc.png", "/products/coconutOil3.png", "/image.png"],
+        image: "/products/coconut-oil.webp",
+        gallery: ["/products/coconut-oil2.webp", "/products/cc.webp", "/products/coconutOil3.webp", "/image.png"],
     },
     {
         id: "badam-oil",
@@ -45,8 +45,8 @@ export const products = [
             "Enhance your culinary creations by using almond oil in salads or as a finishing oil. Its mild, nutty flavor adds a delightful touch to your dishes.",
             "Create a soothing massage experience by blending almond oil with your favorite essential oils. Enjoy the relaxing benefits and let the tension melt away.",
         ],
-        image: "/products/badham-oil2.png",
-        gallery: ["/products/baaadam.jpeg", "/products/badaam4%20(1).png", "/products/mask.png", "/image.png"],
+        image: "/products/badham-oil2.webp",
+        gallery: ["/products/baaadam.webp", "/products/badaam4%20(1).webp", "/products/mask.png", "/image.png"],
     },
     {
         id: "dhandha-pala-oil",
@@ -68,8 +68,8 @@ export const products = [
             "Dhandapala Dandruff Oil can work with the symptoms of dermatitis and can help calm the skin. This use can provide very good results.",
             "Danthapala leaves are very helpful in fighting malignant melanoma.",
         ],
-        image: "/products/dandhapala-oil.jpeg",
-        gallery: ["/products/dandhapala2.png", "/products/dandhapala3.png", "/products/dandhapala4.png", "/image.png"],
+        image: "/products/dandhapala-oil.webp",
+        gallery: ["/products/dandhapala2.webp", "/products/dandhapala3.webp", "/products/dandhapala4.webp", "/image.png"],
     },
     {
         id: "black-cumin-seed-oil",
@@ -91,8 +91,8 @@ export const products = [
             "Add to herbal tea",
             "drink straight from a spoon"
         ],
-        image: "/products/Black-Cumin-Seed-Oil.png",
-        gallery: ["/products/Black-Cumin-Seed-Oil.png", "/products/blackcumin2.png", "/products/blackcumin3.png", "/products/blackcumin4.png", "/image.png"],
+        image: "/products/Black-Cumin-Seed-Oil.webp",
+        gallery: ["/products/blackcumin2.webp", "/products/blackcumin3.webp", "/products/blackcumin4.webp", "/image.png"],
     },
     {
         id: "gingelly-oil",
@@ -113,8 +113,8 @@ export const products = [
             "Use oil on your skin for massage and moisturizing purposes.",
             "Using dental for strengthening teeth, gums, foil smell."
         ],
-        image: "/products/Gingelly-Oil.png",
-        gallery: ["/products/gingelly2.png", "/products/gingelly3.png", "/products/gingelly4.png", "/image.png"],
+        image: "/products/Gingelly-Oil.webp",
+        gallery: ["/products/gingelly2.webp", "/products/gingelly3.webp", "/products/gingelly4.webp", "/image.png"],
     },
     {
         id: "chandra-mukhi-oil",
@@ -136,8 +136,8 @@ export const products = [
             "Chandramukhi oil helps calm irritated and stressed skin, supporting relief from dryness-related discomfort. Continuous use can improve overall skin texture and natural glow.",
             "The nourishing properties of natural oils help protect the skin barrier and support long-term skin health, making it suitable for daily face and body care."
         ],
-        image: "/products/Chandra-Mukhi-Oil.png",
-        gallery: ["/products/Chandra-Mukhi-Oil.png", "/products/chandramukhi2.png", "/products/chandramukhi3.png", "/products/chandramukhi4.png", "/image.png"],
+        image: "/products/Chandra-Mukhi-Oil.webp",
+        gallery: ["/products/chandramukhi2.webp", "/products/chandramukhi3.webp", "/products/chandramukhi4.webp", "/image.png"],
     },
     {
         id: "chia-seed-oil",
@@ -179,8 +179,8 @@ export const products = [
             ]
         }
         ,
-        image: "/products/Chia-Seed-Oil.png",
-        gallery: ["/products/chia-seed2.png", "/products/chia-seed3.png", "/products/chia-seed4.png", "/image.png"],
+        image: "/products/Chia-Seed-Oil.webp",
+        gallery: ["/products/chia-seed2.webp", "/products/chia-seed3.webp", "/products/chia-seed4.webp", "/image.png"],
     },
     {
         id: "ylangi-hair-oil",
@@ -205,8 +205,8 @@ export const products = [
             "Enhances natural shine and vitality, giving hair a healthy, glossy appearance.",
             "Suitable for all hair types, including dry, damaged, frizzy, and normal hair."
         ],
-        image: "/products/ylangi-oil.png",
-        gallery: ["/products/ylangi2.png", "/products/ylangi3.png", "/products/ylangi4.png"],
+        image: "/products/ylangi-oil.webp",
+        gallery: ["/products/ylangi2.webp", "/products/ylangi3.webp", "/products/ylangi4.webp", "/image.png"],
     },
     {
         id: "kesakala-hair-oil",
@@ -228,28 +228,10 @@ export const products = [
             "This Ayurvedic formulation helps reduce dryness, frizz, and hair damage while promoting natural shine and softness. Long-term use can improve hair texture and strength.",
             "Suitable for all hair types, including dry, damaged, and frizzy hair, making it ideal for regular hair care."
         ],
-        image: "/products/Kesakala-Hair-Oil.png",
-        gallery: ["/products/kesakala2.png", "/products/kesakala3.png", "/products/kesakala4.png"],
+        image: "/products/Kesakala-Hair-Oil.webp",
+        gallery: ["/products/kesakala2.webp", "/products/kesakala3.webp", "/products/kesakala4.webp", "/image.png"],
     },
-    // {
-    //     id: "mustard-oil",
-    //     title: "Mustard oil",
-    //     category: ["Edible Oil"],
-    //     price: "160.00",
-    //     desc: "Mustard oil, which is produced from the seeds of the mustard plant, is a common ingredient in Indian cuisine.",
-    //     longDesc: "Chia seed oil is extracted from the seeds of the chia plant. It is a versatile product with various applications in cooking and skincare.",
-    //     keyBenefits: [
-    //         "Rich in Omega-3 fatty acids",
-    //         "Improves skin hydration",
-    //         "Supports heart health",
-    //     ],
-    //     howToUse: [
-    //         "Add to smoothies or salads.",
-    //         "Apply topically to skin for hydration.",
-    //     ],
-    //     image: "/products/Mustard-Oil.png",
-    //     gallery: ["/products/Mustard-Oil.png"],
-    // },
+
     {
         id: "flax-seed-Oil",
         title: "Flax Seed Oil",
@@ -271,8 +253,8 @@ export const products = [
             "Its nutrient-rich composition helps protect the skin barrier and supports long-term skin wellness, making it suitable for daily face and body care routines.",
             
         ],
-        image: "/products/Flax-Seed-Oil.png",
-        gallery: ["/products/flax-seed2.png", "/products/flax-seed3.png", "/products/flax-seed4.png", "/image.png"]
+        image: "/products/Flax-Seed-Oil.webp",
+        gallery: ["/products/flax-seed2.webp", "/products/flax-seed3.webp", "/products/flax-seed4.webp", "/image.png"]
 
     },
     {
@@ -296,6 +278,75 @@ export const products = [
             "Long-term use of Coco Rosemary hair oil helps improve hair texture, reduce hair fall, and leave hair soft, shiny, and manageable."
         ],
         image: "/products/Coco-Rosemary-Oil.png",
-        gallery: ["/products/rosemary2.png", "/products/rosemary3.png", "/products/rosemary4.png"],
+        gallery: ["/products/rosemary2.png", "/products/rosemary3.png", "/products/rosemary4.png", "/image.png"],
+    },
+    {
+        id: "lemon-grass-oil",
+        title: "Lemon Grass Oil",
+        category: ["Hair Oil"],
+        price: "160.00",
+        desc: "Lemon Grass Oil use it as a diffuser oil to refresh your space and transform your surroundings into a calm, uplifting environment.",
+        longDesc: "use it as a diffuser oil to refresh your space and transform your surroundings into a calm, uplifting environment. When diffused, the pure lemongrass aroma spreads gently through the air, helping to clear unwanted odors, purify indoor spaces, and create a fresh, clean feeling that instantly lifts your mood. Its naturally energizing scent helps reduce stress, mental fatigue, and tiredness, making it perfect for use at home, in the office, during meditation, or while relaxing after a long day. Whether you’re starting your morning with positive energy or unwinding in the evening, this diffuser oil fills your space with a soothing yet refreshing fragrance that promotes clarity, relaxation, and overall well-being.",
+        keyBenefits: [
+            "Prevents Premature Graving",
+            "Adds Natural Shine and Softness.",
+            "Combats Dandruff and Scalp Issues",
+            "Reduces Hair Loss and Thinning",
+            "Strengthens and Nourishes Hair"
+        ],
+        howToUse: [
+            "The best time to apply this oil is right after a shower when your skin is still slightly damp.",
+            "Because it is rich and nourishing, it works wonders as a 'night cap' for your face, especially if you have dry or sensitive skin.",
+            "If you suffer from rough elbows, knees, or itchy dry spots, this oil acts as a soothing barrier.",
+            "Due to its smooth glide and skin-softening properties, it’s perfect for a full-body massage."
+        ],
+        image: "/products/lemon-grass-oil.webp",
+        gallery: ["/products/lemon-grass2.webp", "/products/lemon-grass3.webp", "/products/lemon-grass4.webp", "/image.png"],
+    },
+    {
+        id: "eucalyptus-oil",
+        title: "Eucalyptus Oil",
+        category: ["Hair Oil"],
+        price: "160.00",
+        desc: "Eucalyptus Oil experience the transformative power of a botanical powerhouse designed to revitalize both your hair and your headspace.",
+        longDesc: "experience the transformative power of a botanical powerhouse designed to revitalize both your hair and your headspace. This 100% pure essential oil is meticulously crafted to stimulate the scalp and invigorate the follicles, actively promoting robust hair growth while strengthening the roots to ensure long-term resilience. Beyond its restorative effects on hair health, it serves as a gentle yet effective solution for scalp care, working to eliminate stubborn dandruff and soothe irritation for a balanced, flake-free finish. When diffused or used in aromatherapy, its crisp aroma acts as a catalyst for mental clarity, sharpening your focus and clearing the fog from a busy day. Whether you are incorporating it into your favorite DIY beauty recipes, adding a few drops to a diffuser, or blending it into a therapeutic massage oil, you can trust in a formula that contains absolutely no harsh chemicals or synthetic fragrances—just nature in its most potent, unadulterated form.",
+        keyBenefits: [
+            "Prevents Premature Graving",
+            "Adds Natural Shine and Softness.",
+            "Combats Dandruff and Scalp Issues",
+            "Reduces Hair Loss and Thinning",
+            "Strengthens and Nourishes Hair"
+        ],
+        howToUse: [
+            "For best results, apply the oil when skin is slightly damp to enhance absorption.",
+            "Forms a natural protective barrier against environmental stressors.",
+            "Helps restore the skin’s natural glow and healthy appearance.",
+            "Ideal for calming stressed skin and promoting relaxation during self-massage."
+        ],
+        image: "/products/eucalyptus-oil.webp",
+        gallery: ["/products/eucalyptus2.webp", "/products/eucalyptus3.webp", "/products/eucalyptus4.webp", "/image.png"],
+    },
+    {
+        id: "rosemary-oil",
+        title: "Rosemary Oil",
+        category: ["Hair Oil"],
+        price: "160.00",
+        desc: "Rosemary Oil discover the natural power of Rosemary Oil, a time-tested botanical known for its ability to support healthy hair and scalp care.",
+        longDesc: "discover the natural power of Rosemary Oil, a time-tested botanical known for its ability to support healthy hair and scalp care. This 100% pure essential oil helps stimulate hair follicles, improve scalp circulation, and strengthen roots, promoting thicker, healthier-looking hair over time. Its clarifying properties assist in reducing dandruff and soothing scalp irritation, leaving the scalp refreshed and balanced. Beyond hair care, rosemary oil is widely valued in aromatherapy for its fresh, herbaceous aroma that helps improve focus, mental clarity, and relaxation. Ideal for scalp massages, DIY beauty blends, diffusers, or therapeutic massage oils, this versatile essential oil is free from harsh chemicals and synthetic fragrances—delivering nature’s goodness in its purest form.",
+        keyBenefits: [
+            "Prevents Premature Graving",
+            "Adds Natural Shine and Softness.",
+            "Combats Dandruff and Scalp Issues",
+            "Reduces Hair Loss and Thinning",
+            "Strengthens and Nourishes Hair"
+        ],
+        howToUse: [
+            "For the most effective hydration, apply the oil when your skin is slightly damp to lock in moisture.",
+            "Ideal for dry or sensitive skin, this oil helps create a natural protective barrier against environmental stressors.",
+            "If skin feels itchy, tight, or stressed due to climate or pollution, use as a soothing, calming treatment.",
+            "For a radiant, healthy glow, gently massage the oil into the skin to stimulate circulation and improve absorption."
+        ],
+        image: "/products/rosemary-oil.webp",
+        gallery: ["/products/rosemary-oil2.webp", "/products/rosemary-o.webp", "/products/rosemary-oil4.webp", "/image.png"],
     },
 ]
