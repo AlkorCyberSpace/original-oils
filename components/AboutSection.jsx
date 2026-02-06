@@ -140,7 +140,7 @@ const AboutSection = () => {
           "
         >
           <Image
-            src="/products/kesakala3.png"
+            src="/products/kesakala3.webp"
             alt="Oil Bottle"
             width={120}
             height={120}
@@ -161,7 +161,7 @@ const AboutSection = () => {
           "
         >
           <Image
-            src="/products/chandramukhi3.png"
+            src="/products/chandramukhi3.webp"
             alt="Oil Bottle"
             width={120}
             height={120}

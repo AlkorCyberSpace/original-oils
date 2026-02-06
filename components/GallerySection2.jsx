@@ -4,51 +4,83 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef } from "react";
 
 const media = [
-  {
-    type: "image",
-    src: "/products/coconutOil3.png",
-    className: "md:col-span-1 md:row-span-1",
-  },
+  // --- Block 1: Feature Videos (Top) ---
   {
     type: "video",
     src: "/gallery/g-video1.mp4",
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    type: "image",
-    src: "/products/chia-seed4.png",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "image",
-    src: "/products/kesakala4.png",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "image",
-    src: "/products/badaam4 (1).webp",
-    className: "md:col-span-1 md:row-span-1",
-  },
-
-
-  {
     type: "video",
     src: "/gallery/g-video3.mp4",
     className: "md:col-span-2 md:row-span-2",
+  },
+  {
+    type: "video",
+    src: "/gallery/g-video4.mp4",
+    className: "md:col-span-2 md:row-span-2",
+  },
+  {
+    type: "video",
+    src: "/gallery/g-video2.mp4",
+    className: "md:col-span-2 md:row-span-2",
+  },
+  {
+    type: "video",
+    src: "/video2.mp4",
+    className: "md:col-span-2 md:row-span-1",
+  },
+  {
+    type: "video",
+    src: "/gallery/mill.mp4",
+    className: "md:col-span-2 md:row-span-1",
+  },
+
+  // --- Block 2: Product & Gallery Images (Bottom) ---
+  {
+    type: "image",
+    src: "/products/coconutOil3.png",
+    className: "md:col-span-1 md:row-span-1",
   },
   {
     type: "image",
     src: "/products/badhaam2.png",
     className: "md:col-span-1 md:row-span-1",
   },
-  {
+    {
     type: "image",
-    src: "/products/dhandhapala2.jpeg",
+    src: "/products/chandramukhi3.webp",
+    className: "md:col-span-1 md:row-span-1",
+  },
+    {
+    type: "image",
+    src: "/products/dandhapala3.webp",
     className: "md:col-span-1 md:row-span-1",
   },
   {
     type: "image",
-    src: "/products/flax-seed4.png",
+    src: "/products/gingelly2.webp",
+    className: "md:col-span-1 md:row-span-1",
+  },
+    {
+    type: "image",
+    src: "/products/rosemary3.png",
+    className: "md:col-span-1 md:row-span-1",
+  },
+ 
+  {
+    type: "image",
+    src: "/products/flax-seed3.png",
+    className: "md:col-span-1 md:row-span-1",
+  },
+    {
+    type: "image",
+    src: "/products/kesakala4.png",
+    className: "md:col-span-1 md:row-span-1",
+  },
+  {
+    type: "image",
+    src: "/products/eucalyptus3.webp",
     className: "md:col-span-1 md:row-span-1",
   },
 
@@ -57,127 +89,33 @@ const media = [
     src: "/products/rosemary-o.webp",
     className: "md:col-span-1 md:row-span-1",
   },
-
-
-
   {
     type: "image",
-    src: "/products/flax-seed3.png",
+    src: "/products/chia-seed4.webp",
     className: "md:col-span-1 md:row-span-1",
   },
   {
     type: "image",
-    src: "/products/eucalyptus3.webp",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "video",
-    src: "/video2.mp4",
-    className: "md:col-span-2 md:row-span-1",
-  },
-
-
-
-  {
-    type: "image",
-    src: "/gallery/5.png",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "image",
-    src: "/gallery/image.jpeg",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "image",
-    src: "/gallery/8.png",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "image",
-    src: "/gallery/6.png",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "image",
-    src: "/black-seed.jpg",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "video",
-    src: "/gallery/g-video4.mp4",
-    className: "md:col-span-2 md:row-span-2",
-  },
-  {
-    type: "image",
-    src: "/gallery/6.png",
-    className: "md:col-span-1 md:row-span-1",
-  },
-  {
-    type: "image",
-    src: "/black-seed.jpg",
+    src: "/products/lemon-grass3.webp",
     className: "md:col-span-1 md:row-span-1",
   },
 
-  {
-    type: "video",
-    src: "/gallery/mill.mp4",
-    className: "md:col-span-1 md:row-span-1",
-  },
 
-  {
-    type: "video",
-    src: "/gallery/g-video2.mp4",
-    className: "md:col-span-2 md:row-span-2",
-  },
-  {
-    type: "image",
-    src: "/gallery/6.png",
-    className: "md:col-span-2 md:row-span-2",
-  },
 
 ];
 
 const VideoItem = ({ src, poster }) => {
-  const videoRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(true);
-
-  const toggleMute = (e) => {
-    e.stopPropagation();
-    if (videoRef.current) {
-      videoRef.current.muted = !videoRef.current.muted;
-      setIsMuted(videoRef.current.muted);
-    }
-  };
-
   return (
     <div className="relative w-full h-full">
       <video
-        ref={videoRef}
         src={src}
         poster={poster}
         autoPlay
-        muted={isMuted}
+        muted
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       />
-
-      {/* Sound Toggle Button */}
-      <button
-        onClick={toggleMute}
-        className="absolute bottom-3 right-3 z-30 p-2 bg-black/30 backdrop-blur-sm rounded-full text-white hover:bg-black/50 transition-colors"
-      >
-        {isMuted ? (
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
-          </svg>
-        ) : (
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
-          </svg>
-        )}
-      </button>
 
       {/* Play Icon Overlay */}
       <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none opacity-100 group-hover:opacity-0 transition-opacity duration-300">

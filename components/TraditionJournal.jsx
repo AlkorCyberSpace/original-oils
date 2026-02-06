@@ -64,7 +64,7 @@ export default function TraditionJournal() {
           </h2>
         </div>
 
-        <div className="flex flex-col justify-end items-end text-gray-600 text-xs sm:text-xs md:text-md lg:text-md text-right leading-relaxed font-medium">
+        <div className="flex flex-col justify-end items-end text-gray-500 text-xs sm:text-xs md:text-md lg:text-lg text-right leading-relaxed font-medium">
           <p>
             Where tradition, balance, 
           </p>
