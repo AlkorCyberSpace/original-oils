@@ -72,15 +72,15 @@ const Navbar = () => {
               (isHome
                 ? (!showFullNavbar && isDesktop)
                 : isDesktop)) && (
-              <Image
-                src="/logo.png"
-                alt="Original Oils Logo"
-                width={255}
-                height={90}
-                priority
-                className="h-16 sm:h-14 w-auto object-contain transition-all duration-500 -ml-7 sm:ml-0 bg-white rounded-full p-2"
-              />
-            )}
+                <Image
+                  src="/logo.png"
+                  alt="Original Oils Logo"
+                  width={255}
+                  height={90}
+                  priority
+                  className="h-16 sm:h-14 w-auto object-contain transition-all duration-500 -ml-7 sm:ml-0 bg-white rounded-full p-2"
+                />
+              )}
           </Link>
 
           {/* ================= DESKTOP NAV ================= */}
@@ -134,13 +134,13 @@ const Navbar = () => {
 
           {(!isDesktop ||
             (!isHome ? scrolled && isDesktop : !showFullNavbar)) && (
-            <button
-              onClick={() => setOpen(!open)}
-              className={`transition-all duration-300 bg-white p-2  rounded-3xl  ${iconColor}`}
-            >
-              {open ? <X size={28} /> : <Menu size={28} />}
-            </button>
-          )}
+              <button
+                onClick={() => setOpen(!open)}
+                className={`transition-all duration-300 bg-white p-2  rounded-3xl  ${iconColor}`}
+              >
+                {open ? <X size={28} /> : <Menu size={28} />}
+              </button>
+            )}
         </div>
       </nav>
 

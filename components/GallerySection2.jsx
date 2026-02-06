@@ -7,12 +7,12 @@ const media = [
   // --- Block 1: Feature Videos (Top) ---
   {
     type: "video",
-    src: "/gallery/g-video1.mp4",
+    src: "/gallery/COCONUT.mp4",
     className: "md:col-span-2 md:row-span-2",
   },
   {
     type: "video",
-    src: "/gallery/g-video3.mp4",
+    src: "/gallery/Badam-hindi.mp4",
     className: "md:col-span-2 md:row-span-2",
   },
   {
