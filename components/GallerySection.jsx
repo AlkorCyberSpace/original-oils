@@ -1,27 +1,27 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import { motion, useMotionValue } from "framer-motion";
 
 const images = [
-  "/gallery/1.png",
-  "/gallery/6.png",
-  "/gallery/4.png",
-  "/gallery/7.png",
+  "/products/coconutOil3.png",
+  "/products/badhaam2.png",
+  "/products/chandramukhi3.webp",
+  "/products/dandhapala3.webp",
 ];
 
 export default function GallerySection() {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [isHovered, setIsHovered] = useState(false);
+const x = useMotionValue(0);
+const y = useMotionValue(0);
+const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setMousePos({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  };
+const handleMouseMove = (e) => {
+  const rect = e.currentTarget.getBoundingClientRect();
+  x.set(e.clientX - rect.left);
+  y.set(e.clientY - rect.top);
+};
+
 
   return (
     <section className="bg-white px-4 md:px-7 ">
@@ -70,31 +70,32 @@ export default function GallerySection() {
               onMouseMove={handleMouseMove}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.04 }}
+transition={{ type: "spring", stiffness: 260, damping: 20 }}
+
               whileTap={{ scale: 0.95 }}
               className="group relative px-10 py-3.5 overflow-hidden rounded-full border border-[#1a1a1a] text-sm font-bold uppercase tracking-widest text-[#1a1a1a] transition-colors duration-300"
             >
-              <motion.span
-                className="absolute bg-[#1a1a1a] rounded-full pointer-events-none"
-                initial={{ width: 0, height: 0 }}
-                animate={isHovered ? {
-                  width: "300%",
-                  height: "600%",
-                  transition: { duration: 0.6, ease: "circOut" }
-                } : {
-                  width: 0,
-                  height: 0,
-                  transition: { duration: 0.4, ease: "circIn" }
-                }}
-                style={{
-                  width: 300,  // Fixed large size
-                  height: 300,
-                  left: mousePos.x,
-                  top: mousePos.y,
-                  translateX: "-50%",
-                  translateY: "-50%",
-                }}
-              />
+             <motion.span
+  className="absolute bg-[#1a1a1a] rounded-full pointer-events-none"
+  initial={false}
+  animate={isHovered ? {
+    width: 300,
+    height: 300,
+    transition: { duration: 0.5, ease: "easeOut" }
+  } : {
+    width: 0,
+    height: 0,
+    transition: { duration: 0.3, ease: "easeIn" }
+  }}
+  style={{
+    x,
+    y,
+    translateX: "-50%",
+    translateY: "-50%",
+  }}
+/>
+
               <span className={`relative transition-colors duration-300 ${isHovered ? 'text-white' : 'text-[#1a1a1a]'}`}>
                 View Collection
               </span>

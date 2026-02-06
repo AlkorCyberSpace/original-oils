@@ -24,7 +24,7 @@ const fadeUp = {
     scale: 1,
     transition: {
       duration: 0.7,
-      ease: [0.16, 1, 0.3, 1], 
+      ease: [0.16, 1, 0.3, 1],
     },
   },
 };
@@ -32,7 +32,7 @@ const fadeUp = {
 const Statistics = () => {
   return (
     <section className="w-full bg-[#f7f7f5] pt-18 pb-18 -mt-10 overflow-hidden">
-      
+
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -40,8 +40,8 @@ const Statistics = () => {
         transition={{ duration: 1 }}
         className="max-w-350 mx-auto px-6 md:px-12 lg:px-20 text-center"
       >
-        
-        
+
+
 
         <motion.h2
           variants={fadeUp}
@@ -50,7 +50,7 @@ const Statistics = () => {
           viewport={{ once: true }}
           className="font-playfair text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-800 leading-tight"
         >
-          Business Build on <br />
+          Business Built on <br />
           Honesty and Trust
         </motion.h2>
 
@@ -59,67 +59,38 @@ const Statistics = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-className="mt-4 text-sm sm:text-base text-gray-500 max-w-2xl mx-auto"
+          className="mt-4 text-sm sm:text-base text-gray-500 max-w-2xl mx-auto"
         >
           See how our expertise and dedication <br />
           have transformed thousands of lives
         </motion.p>
 
-        {/* Cards */}
+        {/* Product Images Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 items-center"
         >
           {[
-            {
-              title: "Customer Satisfaction",
-              value: "98%",
-              desc:
-                "98% of our customers are happy and satisfied with the quality of our oil products.",
-            },
-            {
-              title: "Annual Production",
-              value: "5k+",
-              desc:
-                "Over 5,000 customers choose our oils every year for unmatched purity and quality.",
-            },
-            {
-              title: "Happy Clients",
-              value: "10k+",
-              desc:
-                "With 10,000+ happy customers globally, our oils are a trusted choice for quality.",
-            },
-            {
-              title: "Excellence Rating",
-              value: "4.9/5",
-              desc:
-                "Rated 4.9/5 by thousands of customers for exceptional purity and quality.",
-            },
+            { src: "/frame.jpeg", alt: "Founder" },
+            { src: "/coconutoil2.png", alt: "Coconut Oil" },
+            { src: "/badam2.jpg", alt: "Badam Oil" },
+            { src: "/frame4.png", alt: "Massage Oil" },
           ].map((item, index) => (
             <motion.div
               key={index}
               variants={fadeUp}
-              whileHover={{
-                y: -10,
-                scale: 1.03,
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 200,
-                damping: 18,
-              }}
-              className="bg-white rounded-2xl p-8 py-6 shadow-sm"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="relative w-full h-[290px] flex items-center justify-center bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden"
             >
-              <p className="text-sm text-gray-500 mb-6">{item.title}</p>
-              <h3 className="font-playfair text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-800">
-                {item.value}
-              </h3>
-              <p className="mt-6 text-xs sm:text-xs md:text-sm lg:text-md text-gray-500 leading-relaxed">
-                {item.desc}
-              </p>
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full h-full object-contain"
+              />
             </motion.div>
           ))}
         </motion.div>
