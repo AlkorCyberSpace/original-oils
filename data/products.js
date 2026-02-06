@@ -279,7 +279,7 @@ export const products = [
             "Long-term use of Coco Rosemary hair oil helps improve hair texture, reduce hair fall, and leave hair soft, shiny, and manageable."
         ],
         image: "/products/Coco-Rosemary-Oil.webp",
-        gallery: ["/products/coco-rosemary.webp", "/products/coco-rosemary3.webp", "/products/coco-rosemary4.webp", "/image.png"],
+        gallery: ["/products/coco-rosemary2.webp", "/products/coco-rosemary3.webp", "/products/coco-rosemary4.webp", "/image.png"],
     },
     {
         id: "lemon-grass-oil",
