@@ -2,6 +2,7 @@ export const categories = ["All Products", "Body Oil", "Edible Oil", "Hair Oil",
 
 export const products = [
     {
+        
         id: "coconut-oil",
         title: "Coconut Oil",
         category: ["Edible Oil"],
