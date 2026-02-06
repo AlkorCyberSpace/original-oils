@@ -38,7 +38,7 @@ export const unifraktur = UnifrakturCook({
   variable: "--font-gothic",
 });
 
-// ❌ metadata REMOVED (cannot exist in client component)
+//  metadata REMOVED (cannot exist in client component)
 
 export default function RootLayout({ children }) {
   const [loading, setLoading] = useState(true);

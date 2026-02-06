@@ -76,9 +76,8 @@ export default function CraftSection() {
               {avatars.map((src, index) => (
                 <div
                   key={index}
-                  className={`relative w-14 h-14 rounded-full bg-white ${
-                    index !== 0 ? "-ml-4" : ""
-                  }`}
+                  className={`relative w-14 h-14 rounded-full bg-white ${index !== 0 ? "-ml-4" : ""
+                    }`}
                 >
                   <div className="absolute inset-[3px] rounded-full overflow-hidden">
                     <Image src={src} alt="user" fill className="object-cover" />
@@ -88,14 +87,14 @@ export default function CraftSection() {
             </div>
 
             {/* CTA */}
-             <Link
+            <Link
               href="/review"
               className="mt-8 flex items-center gap-4 text-gray-700 group"
             >
               <span className="text-sm font-medium">
                 Read Testimonials
               </span>
-            
+
               <span className="w-11 h-11 rounded-full border border-gray-400 flex items-center justify-center transition group-hover:bg-gray-900 group-hover:text-white">
                 →
               </span>
