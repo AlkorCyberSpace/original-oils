@@ -79,8 +79,8 @@ export default function ConnectSection() {
                 </Link>
               </li>
               <li>
-                <Link href="/gallery/images" className="hover:text-primary transition-colors">
-                  Image Gallery
+                <Link href="/gallery" className="hover:text-primary transition-colors">
+                  Gallery
                 </Link>
               </li>
               <li>
