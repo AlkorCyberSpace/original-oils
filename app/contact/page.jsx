@@ -56,21 +56,21 @@ export default function ContactPage() {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-   const handleSubmit = (e) => {
-  e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-  const { firstName, lastName, email, telephone, message } = formData;
+        const { firstName, lastName, email, telephone, message } = formData;
 
-  const text = encodeURIComponent(
-    `Hello Original Oils 👋\n\n` +
-    `Name: ${firstName} ${lastName}\n` +
-    `Email: ${email}\n` +
-    `Phone: ${telephone}\n\n` +
-    `Message:\n${message}`
-  );
+        const text = encodeURIComponent(
+            `Hello Original Oils 👋\n\n` +
+            `Name: ${firstName} ${lastName}\n` +
+            `Email: ${email}\n` +
+            `Phone: ${telephone}\n\n` +
+            `Message:\n${message}`
+        );
 
-  window.open(`https://wa.me/918078112788?text=${text}`, "_blank");
-};
+        window.open(`https://wa.me/918078112788?text=${text}`, "_blank");
+    };
 
 
     return (
@@ -98,7 +98,7 @@ export default function ContactPage() {
                         </div>
 
                         <p className="text-[#666666] tracking-wider text-lg">
-                            Feel free to contact usbb
+                            Feel free to contact us
                         </p>
 
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif text-[#333333] leading-tight">
@@ -129,15 +129,21 @@ export default function ContactPage() {
 
                             <div>
                                 <h3 className="text-2xl font-medium text-[#333333] mb-1">Call Us</h3>
-                                <p className="text-gray-500 text-lg tracking-wide">+91 8078112788</p>
+                                <a href="tel:+918078112788" className="text-gray-500 text-lg tracking-wide hover:text-black transition-colors">+91 8078112788</a>
                             </div>
 
                             <div>
                                 <h3 className="text-2xl font-medium text-[#333333] mb-4">Social Media</h3>
                                 <div className="flex gap-4">
-                                    <SocialIcon type="instagram" />
-                                    <SocialIcon type="facebook" />
-                                    <SocialIcon type="whatsapp" />
+                                    <a href="https://www.instagram.com/_originaloils/" target="_blank" rel="noopener noreferrer">
+                                        <SocialIcon type="instagram" />
+                                    </a>
+                                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                        <SocialIcon type="facebook" />
+                                    </a>
+                                    <a href="https://wa.me/918078112788" target="_blank" rel="noopener noreferrer">
+                                        <SocialIcon type="whatsapp" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
