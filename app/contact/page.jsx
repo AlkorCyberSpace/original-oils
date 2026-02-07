@@ -98,7 +98,7 @@ export default function ContactPage() {
                         </div>
 
                         <p className="text-[#666666] tracking-wider text-lg">
-                            Feel free to contact us
+                            Feel free to contact usbb
                         </p>
 
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif text-[#333333] leading-tight">
