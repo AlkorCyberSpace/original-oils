@@ -1,6 +1,54 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ContactSection() {
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        telephone: "",
+        message: "",
+    });
+    const [status, setStatus] = useState(null);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("sending");
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setStatus("success");
+                setFormData({
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    telephone: "",
+                    message: "",
+                });
+            } else {
+                setStatus("error");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            setStatus("error");
+        }
+    };
+
     return (
         <main
             className="relative  pt-24 py-8  overflow-hidden text-foreground"
@@ -46,11 +94,11 @@ export default function ContactSection() {
                             <div>
                                 <h3 className="text-2xl font-medium text-[#333333] mb-1">Contact Us</h3>
                                 <a
-                                  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@originaloils.org"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@originaloils.org"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                  info@originaloils.org
+                                    info@originaloils.org
                                 </a>
                             </div>
 
@@ -89,36 +137,72 @@ export default function ContactSection() {
                             Write Us a Message
                         </h2>
 
-                        <form className="space-y-5 w-full max-w-4xl">
-                            <Input label="First Name" placeholder="Kalyani" />
-                            <Input label="Last Name" placeholder="Anil" />
-                            <Input label="Email" placeholder="kalyani123@gmail.com" type="email" />
-                            <Input label="Telephone" placeholder="+91 87638279" type="tel" />
+                        <form onSubmit={handleSubmit} className="space-y-5 w-full max-w-4xl">
+                            <Input
+                                label="First Name"
+                                placeholder="Kalyani"
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleChange}
+                            />
+                            <Input
+                                label="Last Name"
+                                placeholder="Anil"
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleChange}
+                            />
+                            <Input
+                                label="Email"
+                                placeholder="kalyani123@gmail.com"
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                            />
+                            <Input
+                                label="Telephone"
+                                placeholder="+91 87638279"
+                                type="tel"
+                                name="telephone"
+                                value={formData.telephone}
+                                onChange={handleChange}
+                            />
 
                             <div className="pt-2">
                                 <label className="block text-sm font-medium text-[#333333] mb-2">Message</label>
                                 <div className="relative">
                                     <textarea
                                         rows={3}
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         placeholder="Write your message here..."
                                         className="w-full border-b border-gray-300 bg-transparent outline-none resize-none text-gray-700 placeholder-gray-400 focus:border-black transition-colors py-2 pr-2 scrollbar-thin scrollbar-webkit"
+                                        required
                                     />
                                 </div>
                             </div>
 
                             <div className="flex items-center gap-3 pt-4">
                                 <div className="relative flex items-center">
-                                    <input type="checkbox" id="terms" className="peer w-5 h-5 border-2 border-gray-300 rounded overflow-hidden checked:bg-gray-800 checked:border-gray-800 transition-all cursor-pointer appearance-none" />
+                                    <input type="checkbox" id="terms" className="peer w-5 h-5 border-2 border-gray-300 rounded overflow-hidden checked:bg-gray-800 checked:border-gray-800 transition-all cursor-pointer appearance-none" required />
                                     <svg className="absolute w-3 h-3 text-white left-1 top-1 hidden peer-checked:block pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
                                 </div>
                                 <label htmlFor="terms" className="text-gray-500 text-sm hover:text-black cursor-pointer select-none">I agree with Terms & Conditions</label>
                             </div>
 
                             <div className="flex justify-end pt-4">
-                                <button type="button" className="bg-[#5b3a1e] hover:bg-[#4a2e16] text-white text-lg px-14 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                                    Send
+                                <button type="submit" disabled={status === "sending"} className="bg-[#5b3a1e] hover:bg-[#4a2e16] text-white text-lg px-14 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50">
+                                    {status === "sending" ? "Sending..." : "Send"}
                                 </button>
                             </div>
+                            {status === "success" && (
+                                <p className="text-green-600 text-center mt-4">Message sent successfully!</p>
+                            )}
+                            {status === "error" && (
+                                <p className="text-red-600 text-center mt-4">Failed to send message. Please try again.</p>
+                            )}
                         </form>
                     </div>
 
@@ -129,14 +213,18 @@ export default function ContactSection() {
 }
 
 /* REUSABLE INPUT COMPONENT */
-function Input({ label, placeholder, type = "text" }) {
+function Input({ label, placeholder, type = "text", name, value, onChange }) {
     return (
         <div className="w-full">
             <label className="block text-sm font-medium text-[#333333] mb-1">{label}</label>
             <input
                 type={type}
+                name={name}
+                value={value}
+                onChange={onChange}
                 placeholder={placeholder}
                 className="w-full text-base border-b border-gray-300 bg-transparent outline-none py-1 text-gray-700 placeholder-gray-400 focus:border-black transition-colors"
+                required
             />
         </div>
     );
