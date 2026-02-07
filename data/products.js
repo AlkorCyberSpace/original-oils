@@ -289,11 +289,11 @@ export const products = [
         desc: "Lemon Grass Oil use it as a diffuser oil to refresh your space and transform your surroundings into a calm, uplifting environment.",
         longDesc: "use it as a diffuser oil to refresh your space and transform your surroundings into a calm, uplifting environment. When diffused, the pure lemongrass aroma spreads gently through the air, helping to clear unwanted odors, purify indoor spaces, and create a fresh, clean feeling that instantly lifts your mood. Its naturally energizing scent helps reduce stress, mental fatigue, and tiredness, making it perfect for use at home, in the office, during meditation, or while relaxing after a long day. Whether you’re starting your morning with positive energy or unwinding in the evening, this diffuser oil fills your space with a soothing yet refreshing fragrance that promotes clarity, relaxation, and overall well-being.",
         keyBenefits: [
-            "Prevents Premature Graving",
-            "Adds Natural Shine and Softness.",
-            "Combats Dandruff and Scalp Issues",
-            "Reduces Hair Loss and Thinning",
-            "Strengthens and Nourishes Hair"
+            "Deep nourishment from natural base oils",
+            "Relaxing fragrance from essential oils",
+            "Antioxidant and skin brightening from turmeric",
+            "Improves skin softness and hydration",
+            "Smooth feel with a pleasant aroma"
         ],
         howToUse: [
             "The best time to apply this oil is right after a shower when your skin is still slightly damp.",
@@ -312,11 +312,11 @@ export const products = [
         desc: "Eucalyptus Oil experience the transformative power of a botanical powerhouse designed to revitalize both your hair and your headspace.",
         longDesc: "experience the transformative power of a botanical powerhouse designed to revitalize both your hair and your headspace. This 100% pure essential oil is meticulously crafted to stimulate the scalp and invigorate the follicles, actively promoting robust hair growth while strengthening the roots to ensure long-term resilience. Beyond its restorative effects on hair health, it serves as a gentle yet effective solution for scalp care, working to eliminate stubborn dandruff and soothe irritation for a balanced, flake-free finish. When diffused or used in aromatherapy, its crisp aroma acts as a catalyst for mental clarity, sharpening your focus and clearing the fog from a busy day. Whether you are incorporating it into your favorite DIY beauty recipes, adding a few drops to a diffuser, or blending it into a therapeutic massage oil, you can trust in a formula that contains absolutely no harsh chemicals or synthetic fragrances—just nature in its most potent, unadulterated form.",
         keyBenefits: [
-            "Prevents Premature Graving",
-            "Adds Natural Shine and Softness.",
-            "Combats Dandruff and Scalp Issues",
-            "Reduces Hair Loss and Thinning",
-            "Strengthens and Nourishes Hair"
+            "Refreshes and revitalizes the scalp and skin",
+            "Helps reduce dandruff and soothe scalp irritation",
+            "Supports healthy hair growth by stimulating follicles",
+            "Provides a cooling, calming effect for relaxation",
+            "Clears the senses and improves breathing comfort"
         ],
         howToUse: [
             "For best results, apply the oil when skin is slightly damp to enhance absorption.",
@@ -335,11 +335,11 @@ export const products = [
         desc: "Rosemary Oil discover the natural power of Rosemary Oil, a time-tested botanical known for its ability to support healthy hair and scalp care.",
         longDesc: "discover the natural power of Rosemary Oil, a time-tested botanical known for its ability to support healthy hair and scalp care. This 100% pure essential oil helps stimulate hair follicles, improve scalp circulation, and strengthen roots, promoting thicker, healthier-looking hair over time. Its clarifying properties assist in reducing dandruff and soothing scalp irritation, leaving the scalp refreshed and balanced. Beyond hair care, rosemary oil is widely valued in aromatherapy for its fresh, herbaceous aroma that helps improve focus, mental clarity, and relaxation. Ideal for scalp massages, DIY beauty blends, diffusers, or therapeutic massage oils, this versatile essential oil is free from harsh chemicals and synthetic fragrances—delivering nature’s goodness in its purest form.",
         keyBenefits: [
-            "Prevents Premature Graving",
-            "Adds Natural Shine and Softness.",
-            "Combats Dandruff and Scalp Issues",
-            "Reduces Hair Loss and Thinning",
-            "Strengthens and Nourishes Hair"
+            "Deep nourishment from natural base oils",
+            "Helps reduce hair fall and strengthens hair roots",
+            "Improves scalp circulation for better nourishment",
+            "Assists in controlling dandruff and scalp irritation",
+            "Refreshing herbal aroma that boosts focus and mental clarity"
         ],
         howToUse: [
             "For the most effective hydration, apply the oil when your skin is slightly damp to lock in moisture.",
